@@ -226,6 +226,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+.intro {
+  margin-bottom: 60px;
+}
 .intro__form-arrivalinp {
   margin-bottom: 30px;
   width: 100%;

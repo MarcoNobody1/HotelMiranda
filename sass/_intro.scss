@@ -6,6 +6,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .intro {
+    margin-bottom: 60px;
     &__form-arrivalinp {
         margin-bottom: 30px;
         @include date;
