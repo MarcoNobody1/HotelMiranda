@@ -11,29 +11,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-        <script defer src="Homepage.js"></script>
+    <script defer src="Homepage.js"></script>
 </head>
 
 <body>
+    <div class="header-bg-rectangle">We Make Your Feel Comfortable</div>
     <header class="header">
         <img id="menuBurguer" class="header__menuiconburguer" src="/assets/MenuBurgerIcon.svg" alt="Menu Burger Icon">
-        <img id="menuCross" class="header__menuiconcross header__menuiconcross--closed" src="/assets/MenuCrossIcon.svg" alt="Menu Cross Icon">
+        <img id="menuCross" class="header__menuiconcross header__menuiconcross--closed" src="/assets/MenuCrossIcon.svg"
+            alt="Menu Cross Icon">
         <div class="header__logo">
-            <img class="header__logo-img" src="/assets/Logo.png" alt="Logo">
+            <a href="index.html"> <img class="header__logo-img" src="/assets/Logo.png" alt="Logo"></a>
             <div class="header__logo-name">
                 <span class="header__logo-name-hotel">HOTEL</span>
                 <br>
                 <span class="header__logo-name-miranda">MIRANDA</span>
             </div>
         </div>
-        <nav id="nav" class="header__menucontent header__menucontent--hidden fade">
+        <nav id="nav" class="header__menucontent header__menucontent--hidden">
             <a href="" class="header__menucontent-about">About Us</a>
             <a href="" class="header__menucontent-rooms">Rooms</a>
             <a href="" class="header__menucontent-offers">Offers</a>
             <a href="" class="header__menucontent-contact">Contact</a>
         </nav>
-        <img class="header__profileicon" src="/assets/HeaderProfileIcon.svg" alt="Profile Icon">
-        <img class="header__searchicon" src="/assets/HeaderSearchIcon.svg" alt="Search Icon">
+        <div class="header__icons">
+            <img class="header__icons-profile" src="/assets/HeaderProfileIcon.svg" alt="Profile Icon">
+            <img class="header__icons-search" src="/assets/HeaderSearchIcon.svg" alt="Search Icon">
+            <img class="header__icons-menu" src="/assets/HeaderMenuIcon.svg" alt="Search Icon">
+        </div>
     </header>
 </body>
 
