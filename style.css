@@ -5,6 +5,8 @@
   width: 100%;
   height: 70px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  background-color: #fff;
+  position: fixed;
 }
 .header__logo {
   display: flex;
@@ -23,6 +25,62 @@
 }
 .header__logo-name-miranda {
   font-weight: 400;
+}
+.header__menucontent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 198px;
+  top: 70px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
+  background-color: #fff;
+  z-index: 0;
+  font-family: Archivo;
+  font-weight: 600;
+  padding-left: 21px;
+}
+.header__menucontent--hidden {
+  display: none;
+}
+.header__menucontent-about {
+  color: #111;
+  text-decoration: none;
+}
+.header__menucontent-contact {
+  color: #111;
+  text-decoration: none;
+}
+.header__menucontent-offers {
+  color: #111;
+  text-decoration: none;
+}
+.header__menucontent-rooms {
+  color: #111;
+  text-decoration: none;
+}
+.header__menuiconburguer--closed {
+  display: none;
+}
+.header__menuiconcross {
+  margin-right: 4px;
+}
+.header__menuiconcross--closed {
+  display: none;
+}
+.fade {
+  animation: fade 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 html,
 * {
