@@ -1,7 +1,9 @@
 @import "./sass/header";
+@import './sass/intro';
 
 html,
 * {
+    transition: all 250ms ease-in-out;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
