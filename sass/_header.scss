@@ -8,6 +8,7 @@
     background-color: #fff;
     position: fixed;
     gap: 32px;
+    z-index: 100;
 
     &__logo {
         display: flex;
