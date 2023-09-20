@@ -73,6 +73,9 @@
     }
     &__intro-bookbtn {
         @include button;
+        display:block;
+        margin: 0 auto;
+        max-width: 400px;
     }
     &__intro-content {
         color: #777;
@@ -80,8 +83,8 @@
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.5rem;
-        margin-bottom: 24px;
         max-width: 400px;
+        margin: 0 auto 24px;
     }
     &__intro-maintitle {
         font-family: Old Standard TT;
@@ -89,7 +92,8 @@
         font-weight: 400;
         letter-spacing: -1.2px;
         color: #111;
-        margin-bottom: 16px;
+        max-width: 400px;
+        margin: 0 auto 16px;
 
         @media only screen and (max-width: 375px) {
             font-size: 3rem;
@@ -98,7 +102,8 @@
     &__intro-pretitle {
         @include h6title($theme: #777);
         text-transform: uppercase;
-        margin-bottom: 32px;
+        max-width: 400px;
+        margin: 0 auto 32px;
     }
 }
 
