@@ -35,9 +35,30 @@ window.addEventListener("mousemove", (event) => {
   }
 });
 
-var swiper = new Swiper(".roomswiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+function initSwiper() {
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    var swiper = new Swiper(".roomswiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  } else {
+    var swiper = new Swiper(".roomswiper", {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 50,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+}
+
+initSwiper();
+
+window.addEventListener("resize", () => {
+  initSwiper();
 });

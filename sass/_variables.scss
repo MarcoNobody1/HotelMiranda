@@ -93,7 +93,7 @@
     border-right: none;
 }
 
-@mixin pricetitle($theme: #bead8e, $font: 2rem) {
+@mixin pricetitle($theme: #bead8e, $font: 2.688rem) {
     color: $theme;
     text-align: center;
     font-family: Archivo;

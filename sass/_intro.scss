@@ -7,6 +7,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .intro {
     margin-bottom: 60px;
+    max-width: 100%;
     &__form-arrivalinp {
         margin-bottom: 30px;
         @include date;
@@ -19,8 +20,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     &__form-departureinp {
         margin-bottom: 42px;
         @include date;
-        display: inline;
-        margin-right: 15%;
     }
     &__form-departurelbl {
         @include label;
@@ -31,6 +30,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         background: #222;
         height: 354px;
         padding: 36px 20px;
+        text-align: center;
     }
     &__info {
         padding-top: 145px;

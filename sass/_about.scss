@@ -81,10 +81,19 @@
         font-weight: 400;
         line-height: 1.5rem;
         margin-bottom: 24px;
+        max-width: 400px;
     }
     &__intro-maintitle {
-        @include h1title($theme: #111);
+        font-family: Old Standard TT;
+        font-size: 3.5rem;
+        font-weight: 400;
+        letter-spacing: -1.2px;
+        color: #111;
         margin-bottom: 16px;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3rem;
+        }
     }
     &__intro-pretitle {
         @include h6title($theme: #777);
