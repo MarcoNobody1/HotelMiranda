@@ -113,6 +113,7 @@
   .header--float {
     position: fixed;
     top: 2.5rem;
+    z-index: 100;
   }
   .header__logo {
     display: flex;
