@@ -102,3 +102,10 @@
     font-weight: 700;
     line-height: 2.688rem;
 }
+
+@mixin facilitiescard($bg: url("../assets/Facilities__swiper/bg-card1.png")) {
+    background-image: $bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
