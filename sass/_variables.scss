@@ -27,13 +27,23 @@
     color: $theme;
 }
 
-@mixin h4title ($theme: #111) {
+@mixin h4title($theme: #111) {
     color: $theme;
     font-family: Old Standard TT;
     font-size: 1.875rem;
     font-weight: 400;
     line-height: 1.875rem;
     letter-spacing: -0.9px;
+}
+
+@mixin h3title {
+    color: #222;
+    font-family: Old Standard TT;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -1.2px;
 }
 
 @mixin cardtext($theme: #111) {
@@ -81,4 +91,14 @@
     font-weight: 400;
     border-bottom: 2px solid #bead8e;
     border-right: none;
+}
+
+@mixin pricetitle($theme: #bead8e, $font: 2rem) {
+    color: $theme;
+    text-align: center;
+    font-family: Archivo;
+    font-size: $font;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.688rem;
 }

@@ -1,6 +1,7 @@
 @import "./sass/header";
-@import './sass/intro';
-@import './sass/about';
+@import "./sass/intro";
+@import "./sass/about";
+@import './sass/rooms';
 
 html,
 * {
@@ -14,21 +15,21 @@ body {
     min-width: 320px;
 }
 
-.header-bg-rectangle{
+.header-bg-rectangle {
     display: none;
 }
 
 @media only screen and (min-width: 1000px) {
-.header-bg-rectangle{
-    display: block;
-    width: 100%;
-    height: 100px;
-    background-color:#222;
-    padding-top: 11px;
-    padding-left: 13%;
-    color: #FFF;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-}
+    .header-bg-rectangle {
+        display: block;
+        width: 100%;
+        height: 100px;
+        background-color: #222;
+        padding-top: 11px;
+        padding-left: 13%;
+        color: #fff;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+    }
 }

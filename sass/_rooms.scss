@@ -1,0 +1,81 @@
+@import "./variables";
+
+.rooms {
+    text-align: center;
+
+    &__desc {
+        position: relative;
+        background: #fff;
+        z-index: 2;
+        padding: 19px 24px;
+        margin: -25px auto 0;
+        max-width: 335px;
+    }
+    &__desc-content {
+        color: #777;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin-bottom: 12px;
+    }
+    &__desc-night {
+        @include pricetitle($font: 0.813rem);
+    }
+    &__desc-price {
+        @include pricetitle;
+    }
+    &__desc-title {
+        @include h3title;
+        margin-bottom: 12px;
+    }
+    &__icons {
+        position: relative;
+        width: max-content;
+        padding: 12px 24px;
+        background: #fff;
+        margin: 0 auto -22px auto;
+        z-index: 2;
+
+        img {
+            margin-right: 16px;
+        }
+        :last-child {
+            margin-right: 0;
+        }
+    }
+    &__pretitle {
+        @include h6title($theme: #777);
+        margin-bottom: 24px;
+    }
+    &__title {
+        @include h1title($theme: #222);
+        margin-bottom: 24px;
+    }
+    &__swiper {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.roomswiper {
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
+.swiper-slide {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.swiper-wrapper {
+}
