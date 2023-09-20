@@ -34,3 +34,10 @@ window.addEventListener("mousemove", (event) => {
     header.classList.remove("header--float");
   }
 });
+
+var swiper = new Swiper(".roomswiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
