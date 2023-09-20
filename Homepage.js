@@ -2,6 +2,7 @@ const menuBurguer = document.getElementById("menuBurguer");
 const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
+const facilitiesSwiper = document.querySelector(".facilities__swiper");
 
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
@@ -35,9 +36,10 @@ window.addEventListener("mousemove", (event) => {
   }
 });
 
-function initSwiper() {
+function initRoomsSwiper() {
   if (window.matchMedia("(max-width: 1000px)").matches) {
     var swiper = new Swiper(".roomswiper", {
+      keyboard:true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -57,8 +59,25 @@ function initSwiper() {
   }
 }
 
-initSwiper();
+initRoomsSwiper();
+
+function initFacilitiesSwiper() {
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    facilitiesSwiper.classList.add("swiper");
+    var swiper2 = new Swiper(".facilities__swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+  } else {
+    facilitiesSwiper.classList.remove("swiper");
+  }
+}
+
+initFacilitiesSwiper();
 
 window.addEventListener("resize", () => {
-  initSwiper();
+  initRoomsSwiper();
+  initFacilitiesSwiper();
 });
