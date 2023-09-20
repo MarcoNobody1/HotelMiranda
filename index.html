@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Miranda</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script defer src="Homepage.js"></script>
 </head>
 
@@ -67,25 +68,64 @@
         </article>
         <article class="about__cards">
             <div class="about__cards-cardone">
-                <img src="/assets/AboutUs-Card-one-img.jpg" alt="Team of junior programmers" class="about__cards-cardone-img">
+                <img src="/assets/AboutUs-Card-one-img.jpg" alt="Team of junior programmers"
+                    class="about__cards-cardone-img">
                 <div class="about__cards-cardone-skill">
                     <img src="/assets/AboutUs-Icon-One.svg" alt="" class="about__cards-cardone-skill-icon">
                     <h4 class="about__cards-cardone-skill-title">Strong Team</h4>
-                    <p class="about__cards-cardone-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <p class="about__cards-cardone-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.</p>
                 </div>
 
             </div>
             <div class="about__cards-cardtwo">
-                <img src="/assets/AboutUs-Card-two-img.jpg" alt="Team of junior programmers" class="about__cards-cardtwo-img">
+                <img src="/assets/AboutUs-Card-two-img.jpg" alt="Team of junior programmers"
+                    class="about__cards-cardtwo-img">
                 <div class="about__cards-cardtwo-skill">
                     <img src="/assets/AboutUs-Icon-Two.svg" alt="" class="about__cards-cardtwo-skill-icon">
                     <h4 class="about__cards-cardtwo-skill-title">Luxury Room</h4>
-                    <p class="about__cards-cardtwo-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <p class="about__cards-cardtwo-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.</p>
                 </div>
             </div>
         </article>
+    </section>
+    <section class="rooms">
+        <h6 class="rooms__pretitle">ROOMS</h6>
+        <h1 class="rooms__title">Hand Picked Rooms</h1>
+        <div class="rooms__icons">
+            <img src="./assets/Rooms__desc Icons/icon 1.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 2.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 3.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 4.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 5.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 6.svg" alt="" class="">
+            <img src="./assets/Rooms__desc Icons/icon 7.svg" alt="" class="">
+        </div>
+
+        <div class="swiper roomswiper">
+            <div class="swiper-wrapper">
+                <img alt="Hotel Room nº1" src="/assets/Rooms_swiper/room 1.jpg" class="swiper-slide">
+                <img alt="Hotel Room nº2" src="/assets/Rooms_swiper/room 2.jpg" class="swiper-slide">
+                <img alt="Hotel Room nº3" src="/assets/Rooms_swiper/room 3.jpg" class="swiper-slide">
+                <img alt="Hotel Room nº4" src="/assets/Rooms_swiper/room 4.jpg" class="swiper-slide">
+                <img alt="Hotel Room nº5" src="/assets/Rooms_swiper/room 5.jpg" class="swiper-slide">
+                <img alt="Hotel Room nº6" src="/assets/Rooms_swiper/room 6.jpg" class="swiper-slide">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="rooms__desc">
+            <h3 class="rooms__desc-title">Minimal Duplex Room</h3>
+            <p class="rooms__desc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore.</p>
+            <span class="rooms__desc-price">$345</span>
+            <span class="rooms__desc-night">/Night</span>
+        </div>
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </body>
 
