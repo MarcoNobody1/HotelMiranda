@@ -8,6 +8,7 @@
   background-color: #fff;
   position: fixed;
   gap: 32px;
+  z-index: 100;
 }
 .header__logo {
   display: flex;
@@ -584,6 +585,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 1.406rem 2.938rem;
   border: none;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 .about__intro-bookbtn:hover {
   transition: all 250ms ease-out;
@@ -600,8 +604,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5rem;
-  margin-bottom: 24px;
   max-width: 400px;
+  margin: 0 auto 24px;
 }
 .about__intro-maintitle {
   font-family: Old Standard TT;
@@ -609,7 +613,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   letter-spacing: -1.2px;
   color: #111;
-  margin-bottom: 16px;
+  max-width: 400px;
+  margin: 0 auto 16px;
 }
 @media only screen and (max-width: 375px) {
   .about__intro-maintitle {
@@ -623,7 +628,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: 2.8px;
   color: #777;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  max-width: 400px;
+  margin: 0 auto 32px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -821,6 +827,149 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .swiper {
     max-width: none;
     --swiper-navigation-sides-offset: 110px;
+  }
+}
+.introvideo {
+  background: #222;
+  max-width: none;
+  padding: 64px 20px 48px;
+  margin-bottom: 60px;
+}
+.introvideo__innercontent {
+  margin: 0 auto;
+  max-width: 335px;
+}
+.introvideo__button {
+  background: #bead8e;
+  font-size: 0.875rem;
+  font-family: Archivo;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2.8px;
+  padding: 1.406rem 2.938rem;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+.introvideo__button:hover {
+  transition: all 250ms ease-out;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.introvideo__button:active {
+  transition: all 150ms ease-out;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.introvideo__content {
+  color: #c2c2c2;
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.introvideo__pretitle {
+  font-family: Archivo;
+  font-size: 0.813rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #bdac8d;
+  display: block;
+  width: auto;
+  margin-bottom: 32px;
+}
+.introvideo__title {
+  font-family: Old Standard TT;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.introvideo__video {
+  display: block;
+  margin-bottom: 36px;
+}
+
+@media only screen and (max-width: 375px) {
+  .introvideo__video {
+    width: 200px;
+    height: 161px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .introvideo {
+    background: rgb(34, 34, 34);
+    background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(34, 34, 34) 70%, rgb(173, 157, 130) 70%, rgb(173, 157, 130) 100%);
+    max-width: none;
+    max-height: 700px;
+    padding: 64px 20px 48px;
+    margin-bottom: 118.16px;
+  }
+  .introvideo__innercontent {
+    width: 70%;
+    max-width: none;
+  }
+  .introvideo__button {
+    background: #bead8e;
+    font-size: 0.875rem;
+    font-family: Archivo;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2.8px;
+    padding: 1.406rem 2.938rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+  .introvideo__button:hover {
+    transition: all 250ms ease-out;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .introvideo__button:active {
+    transition: all 150ms ease-out;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+  .introvideo__layout {
+    display: block;
+    width: 95%;
+    position: relative;
+  }
+  .introvideo__content {
+    color: #c2c2c2;
+    font-family: Archivo;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+    max-width: 45%;
+  }
+  .introvideo__pretitle {
+    font-family: Archivo;
+    font-size: 0.813rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    color: #bdac8d;
+    display: block;
+    max-width: 500px;
+    margin-bottom: 32px;
+  }
+  .introvideo__title {
+    font-family: Old Standard TT;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    color: #fff;
+    margin-bottom: 32px;
+    max-width: 50%;
+  }
+  .introvideo__video {
+    position: absolute;
+    right: 0;
+    top: 15%;
   }
 }
 html,
