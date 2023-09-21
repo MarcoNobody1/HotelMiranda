@@ -1327,6 +1327,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .outro {
   background-color: #222;
   padding: 48px 82px;
+  margin-bottom: 60px;
 }
 .outro__inner {
   width: 100%;
@@ -1395,6 +1396,232 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .outro__skill {
     align-items: flex-start;
     margin-bottom: 0;
+  }
+}
+.footer__contactus {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer__contactus-group {
+  display: flex;
+  gap: 21.55px;
+  margin-bottom: 61px;
+}
+.footer__contactus-group:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__contactus-group:last-child {
+  margin-bottom: 30px;
+}
+.footer__contactus-group-content {
+  color: #777;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__contactus-group-icon {
+  width: 40px;
+}
+.footer__contactus-group-title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer__contactus-title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  margin-bottom: 34px;
+}
+.footer__endbar {
+  background: #f8f8f8;
+  padding: 16px 20px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.footer__endbar-copy {
+  color: #222;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  display: inline-block;
+  margin: 0 24px 24px 0;
+  text-decoration: none;
+}
+.footer__endbar-terms {
+  color: #222;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  display: inline-block;
+  text-decoration: none;
+}
+.footer__goobdbye-icon:hover {
+  background-color: #bead8e;
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer__wrapper {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.footer__goodbye {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer__goodbye-content {
+  color: #777;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+.footer__goodbye-icongroup {
+  display: flex;
+  gap: 26px;
+  margin-bottom: 40px;
+}
+.footer__inner {
+  padding: 32px 22px;
+  background-image: url("../assets/Footer/footerbgapp.png");
+  background-size: cover;
+  margin: 0 auto;
+}
+.footer__logo {
+  display: flex;
+  gap: 28.11px;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.footer__logo-name {
+  font-family: Archivo;
+  letter-spacing: 2.6px;
+  font-size: 1.625rem;
+}
+.footer__logo-name-hotel {
+  font-weight: 700;
+}
+.footer__logo-name-miranda {
+  font-weight: 400;
+}
+.footer__services {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer__services-content {
+  display: flex;
+  max-height: 288px;
+  margin-bottom: 32px;
+}
+.footer__services-listelement::before {
+  content: "+";
+  margin-right: 5px;
+}
+.footer__services-listelement {
+  color: #777;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 48px;
+  margin-right: 19px;
+}
+@media only screen and (max-width: 375px) {
+  .footer__services-listelement {
+    font-size: 0.8rem;
+  }
+}
+.footer__services-title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  margin-bottom: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__inner {
+    padding: 100px 22px;
+    background-image: url("../assets/Footer/footerbgweb.png");
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+  }
+  .footer__goodbye-content {
+    max-width: 270px;
+    margin-bottom: 32px;
+  }
+  .footer__goodbye {
+    max-width: 600px;
+    margin: 0 0 0 auto;
+  }
+  .footer__services-listelement {
+    color: #777;
+    font-family: Roboto;
+    font-size: 0.7rem;
+    margin-right: 0px;
+  }
+  .footer__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    justify-content: space-around;
+  }
+  .jello:hover {
+    animation: jello 1s both;
+  }
+  @keyframes jello {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+@media only screen and (min-width: 1110px) {
+  .footer__services-listelement {
+    font-size: 1rem;
   }
 }
 html,
