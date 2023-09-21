@@ -3,6 +3,7 @@ const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
 const facilitiesSwiper = document.querySelector(".facilities__swiper");
+const facilitieswrapper = document.querySelector(".wrapperfacilities");
 
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
@@ -72,6 +73,7 @@ function initFacilitiesSwiper() {
 
   } else {
     facilitiesSwiper.classList.remove("swiper");
+    facilitieswrapper.classList.remove("swiper-wrapper");
   }
 }
 
