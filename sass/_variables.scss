@@ -97,6 +97,15 @@
     font-weight: 700;
 }
 
+@mixin linkprev($theme: #222) {
+    color: $theme;
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    text-decoration: none;
+}
+
 @mixin date() {
     width: 100%;
     max-width: 300px;
