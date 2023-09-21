@@ -1,7 +1,7 @@
 @import "./variables";
 
 .menu {
-    margin: 0 auto 60px;
+    margin: 0 auto 91px;
     position: relative;
     text-align: center;
 
@@ -37,6 +37,7 @@
         height: 450px;
         position: relative;
         --swiper-navigation-top-offset: 94%;
+        margin-bottom: 60px;
     }
 
     &__swiper-pageone {
@@ -79,11 +80,23 @@
         display: inline-block;
         margin: 0 0 32px;
     }
+    &__photoswiper{
+        width: 100%;
+        height: 100%;
+    }
+    &__photoswiper-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__photoswiper-photo img{
+        display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 }
 
-.menu__controls {
-    width: 200px;
-}
 
 #menunextslide {
     left: 85%;
@@ -111,7 +124,7 @@
             display: inline-block;
             text-align: left;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1180px;
         }
         &__donutwrapper {
             position: relative;
@@ -139,6 +152,19 @@
         }
         &__swiper-recipe-content {
             max-width: 300px;
+        }
+        &__photoswiper-photo img{
+            display: inline-block;
+          width: 95%;
+          height: 370px;
+          object-fit: cover;
+        }
+        &__photowrapper{
+            display: flex;
+        }
+        &__photoswiper-photo{
+            width: 370px;
+            flex-shrink: 1 !important;
         }
     }
     .menu__swiper-recipe:hover .menu__swiper-recipe-title {
