@@ -1324,6 +1324,79 @@ input[type=date]::-webkit-calendar-picker-indicator {
     color: #fff;
   }
 }
+.outro {
+  background-color: #222;
+  padding: 48px 82px;
+}
+.outro__inner {
+  width: 100%;
+  margin: 0 auto;
+}
+.outro__skill {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 210px;
+  margin-bottom: 60px;
+}
+.outro__skill:last-child {
+  margin-bottom: 0;
+}
+.outro__skill-content {
+  color: #999;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 375px) {
+  .outro__skill-content {
+    font-size: 0.7rem;
+  }
+}
+.outro__skill-icon {
+  width: 78px;
+  margin-bottom: 16px;
+}
+.outro__skill-title {
+  margin: 0;
+}
+.outro__skill-title-data {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136.4%;
+  margin: 0;
+  display: inline-block;
+}
+@media only screen and (max-width: 375px) {
+  .outro__skill-title-data {
+    font-size: 3rem;
+  }
+}
+.outro__skill-title-plus {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1000px) {
+  .outro {
+    margin-bottom: 120px;
+  }
+  .outro__inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .outro__skill {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
 html,
 * {
   transition: all 250ms ease-in-out;
