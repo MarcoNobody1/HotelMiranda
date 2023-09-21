@@ -4,6 +4,8 @@ const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
 const facilitiesSwiper = document.querySelector(".facilities__swiper");
 const facilitieswrapper = document.querySelector(".wrapperfacilities");
+const menuphotoswiper = document.querySelector(".menu__photoswiper");
+const menuphotowrapper = document.querySelector(".menu__photowrapper");
 
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
@@ -38,16 +40,17 @@ window.addEventListener("mousemove", (event) => {
 });
 
 function initRoomsSwiper() {
+  var swiper;
   if (window.matchMedia("(max-width: 1000px)").matches) {
-    var swiper = new Swiper(".roomswiper", {
-      keyboard:true,
+    swiper = new Swiper(".roomswiper", {
+      keyboard: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     });
   } else {
-    var swiper = new Swiper(".roomswiper", {
+    swiper = new Swiper(".roomswiper", {
       slidesPerView: 1.5,
       centeredSlides: true,
       spaceBetween: 50,
@@ -63,14 +66,14 @@ function initRoomsSwiper() {
 initRoomsSwiper();
 
 function initFacilitiesSwiper() {
+  var swiper2;
   if (window.matchMedia("(max-width: 1000px)").matches) {
     facilitiesSwiper.classList.add("swiper");
-    var swiper2 = new Swiper(".facilities__swiper", {
+    swiper2 = new Swiper(".facilities__swiper", {
       pagination: {
         el: ".swiper-pagination",
       },
     });
-
   } else {
     facilitiesSwiper.classList.remove("swiper");
     facilitieswrapper.classList.remove("swiper-wrapper");
@@ -80,29 +83,48 @@ function initFacilitiesSwiper() {
 initFacilitiesSwiper();
 
 function initMenuSwiper() {
+  var swiper3;
   if (window.matchMedia("(max-width: 1000px)").matches) {
-  var swiper3 = new Swiper("#menu__swiper", {
-    navigation: {
-      nextEl: "#menunextslide",
-      prevEl: "#menuprevslide",
-    },
-  });
-} else {
-  var swiper3 = new Swiper("#menu__swiper", {
-    slidesPerView:2,
-    spaceBetween:10,
-    navigation: {
-      nextEl: "#menunextslide",
-      prevEl: "#menuprevslide",
-    },
-  });
-}
+    swiper3 = new Swiper("#menu__swiper", {
+      navigation: {
+        nextEl: "#menunextslide",
+        prevEl: "#menuprevslide",
+      },
+    });
+  } else {
+    swiper3 = new Swiper("#menu__swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: "#menunextslide",
+        prevEl: "#menuprevslide",
+      },
+    });
+  }
 }
 
-initMenuSwiper()
+initMenuSwiper();
+
+function initMenuPhotoSwiper() {
+  var swiper4;
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    swiper4 = new Swiper("#menuphotoswiper", {
+      loop:true,
+      pagination: {
+        el: "#menuphotopagination",
+      },
+    });
+  } else{
+    menuphotoswiper.classList.remove("swiper");
+    menuphotowrapper.classList.remove("swiper-wrapper");
+  }
+}
+
+initMenuPhotoSwiper();
 
 window.addEventListener("resize", () => {
   initRoomsSwiper();
   initFacilitiesSwiper();
   initMenuSwiper();
+  initMenuPhotoSwiper();
 });
