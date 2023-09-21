@@ -36,6 +36,15 @@
     letter-spacing: -0.9px;
 }
 
+@mixin h5title($theme: #222) {
+    color: #222;
+    font-family: Old Standard TT;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+}
+
 @mixin h3title {
     color: #222;
     font-family: Old Standard TT;
@@ -107,5 +116,5 @@
     background-image: $bg;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
