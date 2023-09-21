@@ -2,10 +2,7 @@ const menuBurguer = document.getElementById("menuBurguer");
 const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
-const facilitiesSwiper = document.querySelector(".facilities__swiper");
-const facilitieswrapper = document.querySelector(".wrapperfacilities");
-const menuphotoswiper = document.querySelector(".menu__photoswiper");
-const menuphotowrapper = document.querySelector(".menu__photowrapper");
+
 
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
@@ -38,6 +35,11 @@ window.addEventListener("mousemove", (event) => {
     header.classList.remove("header--float");
   }
 });
+
+const facilitiesSwiper = document.querySelector(".facilities__swiper");
+const facilitieswrapper = document.querySelector(".wrapperfacilities");
+const menuphotoswiper = document.querySelector(".menu__photoswiper");
+const menuphotowrapper = document.querySelector(".menu__photowrapper");
 
 function initRoomsSwiper() {
   var swiper;
