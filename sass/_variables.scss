@@ -55,6 +55,15 @@
     letter-spacing: -1.2px;
 }
 
+@mixin h2title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.4%;
+}
+
 @mixin cardtext($theme: #111) {
     color: $theme;
     text-align: center;
@@ -81,8 +90,8 @@
     letter-spacing: -3.6px;
 }
 
-@mixin label() {
-    color: #fff;
+@mixin label($theme: #fff) {
+    color: $theme;
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
