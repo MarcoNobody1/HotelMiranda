@@ -36,7 +36,7 @@
         width: 100%;
         height: 450px;
         position: relative;
-        --swiper-navigation-top-offset: 92%;
+        --swiper-navigation-top-offset: 94%;
     }
 
     &__swiper-pageone {
@@ -66,7 +66,7 @@
         width: 120px;
         height: 120px;
     }
-    &__swper-recipe-title {
+    &__swiper-recipe-title {
         @include h5title;
         margin-bottom: 12.5px;
 
@@ -81,15 +81,15 @@
     }
 }
 
-.controls{
-width: 200px;
+.menu__controls {
+    width: 200px;
 }
 
 #menunextslide {
-left: 85%;
+    left: 85%;
 }
 #menuprevslide {
-  left: 70%;
+    left: 70%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -100,7 +100,7 @@ left: 85%;
             @include h6title($theme: #777);
             margin-bottom: 34px;
         }
-        &__title{
+        &__title {
             font-size: 5rem;
             margin-bottom: 42.84px;
         }
@@ -119,28 +119,35 @@ left: 85%;
             width: 100%;
             height: 229px;
         }
-    
+
         &__donut {
             width: 229px;
             position: absolute;
             top: 0px;
             left: 50px;
         }
+        &__swiper-recipe {
+            align-items: center;
+        }
 
+        &__swiper-recipe-arrow {
+            display: block;
+        }
+        &__swiper-recipe:hover {
+            background-color: #222;
+            cursor: pointer;
+        }
+        &__swiper-recipe-content {
+            max-width: 300px;
+        }
     }
-
-    #menu__swiper{
-        overflow: auto;
+    .menu__swiper-recipe:hover .menu__swiper-recipe-title {
+        color: #fff;
     }
-
-    .controls{
-        width: 200px;
-        }
-        
-        #menunextslide {
-        left: 85%;
-        }
-        #menuprevslide {
-          left: 70%;
-        }
+    .menu__swiper-recipe:hover .menu__swiper-recipe-arrow {
+        fill: #fff;
+    }
+    .menu__swiper-recipe:hover .menu__swiper-recipe-content {
+        color: #fff;
+    }
 }
