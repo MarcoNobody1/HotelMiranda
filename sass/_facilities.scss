@@ -2,6 +2,7 @@
 
 .facilities {
     text-align: center;
+    margin-bottom: 60px;
     &__inner {
         margin: 0 auto;
         max-width: 375px;
@@ -68,33 +69,59 @@
 
 @media only screen and (min-width: 1000px) {
     .facilities {
+        text-align: left;
+        max-width: 100%;
+        margin: 0 auto 47px;
         &__inner {
             margin: 0 auto;
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         &__swiper {
-            width: 75%;
-
+            max-width: 1170px;
         }
         &__swiper-card {
-            width:80%;
+            width: 80%;
             height: auto;
             padding-left: 38px;
             max-width: 100%;
-            }
-        
+        }
+        &__swiper-card-img {
+            max-width: 100px;
+            height: auto;
+        }
+        &__pretitle {
+            margin-bottom: 26px;
+        }
+        &__title {
+            font-size: 5rem;
+            margin-bottom: 40.84px;
+            letter-spacing: -2.4px;
+        }
     }
     .swiper {
     }
     .swiper-pagination {
     }
     .facilitiescard {
-        width: 50%;
+        width: 100%;
         height: 50%;
+        max-width: 370px;
+        max-height: 350px;
+        
     }
     .wrapperfacilities {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        max-width: 80%;
+        max-width: 100%;
+        gap: 30px;
+        justify-items: center;
+        :hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
     }
 }
