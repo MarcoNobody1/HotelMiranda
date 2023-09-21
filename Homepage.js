@@ -79,7 +79,30 @@ function initFacilitiesSwiper() {
 
 initFacilitiesSwiper();
 
+function initMenuSwiper() {
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+  var swiper3 = new Swiper("#menu__swiper", {
+    navigation: {
+      nextEl: "#menunextslide",
+      prevEl: "#menuprevslide",
+    },
+  });
+} else {
+  var swiper3 = new Swiper("#menu__swiper", {
+    slidesPerView:2,
+    spaceBetween:10,
+    navigation: {
+      nextEl: "#menunextslide",
+      prevEl: "#menuprevslide",
+    },
+  });
+}
+}
+
+initMenuSwiper()
+
 window.addEventListener("resize", () => {
   initRoomsSwiper();
   initFacilitiesSwiper();
+  initMenuSwiper();
 });
