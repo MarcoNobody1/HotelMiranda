@@ -501,9 +501,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: center;
   font-family: Roboto;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: 22px;
   margin: 0 35.2px 38.33px;
 }
 .about__cards-cardone-skill-title {
@@ -542,9 +540,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: center;
   font-family: Roboto;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: 22px;
   margin: 0 35.2px 38.33px;
 }
 .about__cards-cardtwo-skill-title {
@@ -1681,6 +1677,7 @@ ul {
 .roomsintro {
   background: #333;
   height: 335px;
+  margin-bottom: 48px;
 }
 .roomsintro__inner {
   padding: 145px 20px 0 20px;
@@ -1978,6 +1975,77 @@ ul {
     max-width: 950px;
   }
 }
+.roomshow {
+  text-align: center;
+}
+.roomshow__booknow {
+  color: #bdbdbd;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.roomshow__inner {
+  display: inline-block;
+  max-width: 500px;
+}
+.roomshow__content {
+  color: #777;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 360px;
+  margin: 0 auto 8px;
+  max-height: 57.14px;
+  text-align: center;
+}
+.roomshow__icons {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: #fff;
+  margin: -30px auto 28px;
+  z-index: 1;
+  position: relative;
+  max-width: 256px;
+}
+.roomshow__photo {
+  width: 335px;
+  height: 218px;
+  margin: 0 auto;
+}
+.roomshow__price {
+  color: #bead8e;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 19px;
+}
+.roomshow__roomwrapper {
+  margin-bottom: 52px;
+}
+.roomshow__title {
+  margin-bottom: 16px;
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+}
+.roomshow__explanation {
+  font-family: Archivo;
+  font-size: 0.813rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #111;
+}
+.roomshow__pagination-cover {
+  display: block;
+  margin: 0 auto 15px;
+}
+
 html,
 * {
   transition: all 250ms ease-in-out;

@@ -69,9 +69,7 @@
     text-align: center;
     font-family: Roboto;
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: 22px;
 }
 
 @mixin h1title($theme: #fff) {
@@ -93,6 +91,13 @@
 @mixin label($theme: #fff) {
     color: $theme;
     font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@mixin roomprice($theme: #bead8e) {
+    color: $theme;
+    font-family: Archivo;
     font-size: 1rem;
     font-weight: 700;
 }
