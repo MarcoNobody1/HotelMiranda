@@ -3,7 +3,6 @@ const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
 
-
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
   menuCross.classList.remove("header__menuiconcross--closed");
@@ -34,4 +33,19 @@ window.addEventListener("mousemove", (event) => {
   } else if (event.clientY > 210 && window.innerWidth > 999) {
     header.classList.remove("header--float");
   }
+});
+
+function initOffersSwiper() {
+  var swiper = new Swiper("#popularlist__swiper", {
+    navigation: {
+      nextEl: "#popularlist-nextslide",
+      prevEl: "#popularlist-prevslide",
+    },
+  });
+}
+
+initOffersSwiper();
+
+window.addEventListener("resize", () => {
+  initOffersSwiper();
 });
