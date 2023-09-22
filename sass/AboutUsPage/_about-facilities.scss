@@ -59,6 +59,9 @@
         font-weight: 400;
         line-height: 24px;
         max-width: 250px;
+        @media only screen and (max-width: 375px) {
+            font-size: 0.6rem;
+        }
     }
     &__swiper-card-img {
         margin-bottom: 37.94px;
@@ -66,6 +69,10 @@
     &__swiper-card-title {
         @include h4title($theme:#FFF);
         margin-bottom: 28.06px;
+        @media only screen and (max-width: 375px) {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
     }
     &__title {
         color: #fff;
