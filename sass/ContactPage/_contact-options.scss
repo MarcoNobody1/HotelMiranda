@@ -8,8 +8,6 @@
         font-size: 0.875rem;
         font-weight: 400;
     }
-    &__icon {
-    }
     &__inner {
         max-width: 375px;
         margin: 0 auto;
@@ -53,9 +51,6 @@
     &__option3:hover {
         transform: scale(1.2);
         cursor: pointer;
-    }
-
-    &__textwrapper {
     }
     &__title {
         color: #222;
