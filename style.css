@@ -1608,7 +1608,7 @@ ul {
 .aboutusintro {
   background: #333;
   height: 335px;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 .aboutusintro__inner {
   padding: 145px 20px 0 20px;
@@ -2436,6 +2436,72 @@ ul {
   background-position: 5% 17%;
 }
 
+.aboutusinfo {
+  padding: 0 20px 51px;
+}
+.aboutusinfo__facilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 316px;
+  margin: 0 auto;
+  height: 336px;
+  justify-items: center;
+  align-items: center;
+}
+.aboutusinfo__facility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  gap: 12.18px;
+}
+.aboutusinfo__facility:hover {
+  transform: scale(1.2);
+  background-color: #bead8e;
+}
+.aboutusinfo__facility:hover .aboutusinfo__facility-title {
+  color: #fff;
+}
+.aboutusinfo__facility:hover .aboutusinfo__facility-icon {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.aboutusinfo__facility-title {
+  color: #222;
+  font-family: Archivo;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+}
+.aboutusinfo__inner {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.aboutusinfo__title {
+  color: #222;
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -1.16px;
+  margin-bottom: 51px;
+}
+.aboutusinfo__video {
+  margin: 0 auto 36px;
+}
+
+@media only screen and (max-width: 380px) {
+  .aboutusinfo__video {
+    width: 250px;
+    height: 161px;
+  }
+}
 html,
 * {
   transition: all 250ms ease-in-out;
