@@ -141,3 +141,10 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@mixin aboutfacilitiescard($bg: url("../assets/AboutUsPage/bg1.png")){
+    background-image: $bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
