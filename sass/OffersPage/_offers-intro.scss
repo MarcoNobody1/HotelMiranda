@@ -1,6 +1,7 @@
 @import "../variables";
 
 .offerspageintro {
+    margin-bottom: 48px;
     background: #333;
     height: 335px;
     &__inner {
@@ -27,9 +28,6 @@
         align-items: center;
         position: absolute;
         right: 20px;
-        @media only screen and (max-width: 391px) {
-            bottom: 20px;
-        }
     }
     &__pretitle {
         @include h6title;
