@@ -3,7 +3,6 @@ const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
 
-
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
   menuCross.classList.remove("header__menuiconcross--closed");
@@ -36,14 +35,28 @@ window.addEventListener("mousemove", (event) => {
   }
 });
 
-function initAboutusPAginationSwiper(){
+function initAboutusPaginationSwiper() {
   var swiper = new Swiper("#aboutusfacilities__swiper", {
-    keyboard:true,
+    keyboard: true,
     pagination: {
       el: "#aboutusfacilities__pagination",
     },
   });
 }
 
-initAboutusPAginationSwiper();
+function initAboutPhotoSwiper() {
+  var swiper2 = new Swiper("#aboutusphotoswiper", {
+    keyboard: true,
+    pagination: {
+      el: "#aboutuscounter__photopagination",
+    },
+  });
+}
 
+initAboutusPaginationSwiper();
+initAboutPhotoSwiper();
+
+window.addEventListener("resize", () => {
+  initAboutusPaginationSwiper();
+  initAboutPhotoSwiper();
+});
