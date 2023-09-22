@@ -2559,6 +2559,119 @@ ul {
   margin-bottom: 26px;
 }
 
+.aboutcard1 {
+  background-image: url("../assets/AboutUsPage/bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutcard2 {
+  background-image: url("../../assets/AboutUsPage/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutcard3 {
+  background-image: url("../../assets/AboutUsPage/bg3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutcard4 {
+  background-image: url("../../assets/AboutUsPage/bg4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutcard5 {
+  background-image: url("../../assets/AboutUsPage/bg5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutcard6 {
+  background-image: url("../../assets/AboutUsPage/bg6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutusfacilities {
+  background: #222;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.aboutusfacilities__inner {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+.aboutusfacilities__pretitle {
+  color: #fff;
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  margin-bottom: 16px;
+}
+.aboutusfacilities__swiper {
+  width: 100%;
+  text-align: left;
+  --swiper-pagination-bottom: 0px;
+  --swiper-pagination-bullet-inactive-color: #333;
+}
+.aboutusfacilities__swiper-card {
+  width: 370px;
+  height: 350px;
+  padding-left: 38px;
+  padding-top: 73px;
+}
+@media only screen and (max-width: 375px) {
+  .aboutusfacilities__swiper-card {
+    width: 320px;
+    height: 300px;
+  }
+}
+.aboutusfacilities__swiper-card-content {
+  color: #FFF;
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 250px;
+}
+.aboutusfacilities__swiper-card-img {
+  margin-bottom: 37.94px;
+}
+.aboutusfacilities__swiper-card-title {
+  color: #FFF;
+  font-family: Old Standard TT;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  margin-bottom: 28.06px;
+}
+.aboutusfacilities__title {
+  color: #fff;
+  font-family: Old Standard TT;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 32px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #BEAD8E !important;
+}
+
 html,
 * {
   transition: all 250ms ease-in-out;
