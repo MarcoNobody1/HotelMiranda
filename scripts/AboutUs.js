@@ -35,3 +35,15 @@ window.addEventListener("mousemove", (event) => {
     header.classList.remove("header--float");
   }
 });
+
+function initAboutusPAginationSwiper(){
+  var swiper = new Swiper("#aboutusfacilities__swiper", {
+    keyboard:true,
+    pagination: {
+      el: "#aboutusfacilities__pagination",
+    },
+  });
+}
+
+initAboutusPAginationSwiper();
+
