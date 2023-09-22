@@ -2102,6 +2102,7 @@ ul {
 }
 .roomoffer__imgwrapper-img {
   max-width: 335px;
+  max-height: 160px;
   width: 100%;
 }
 .roomoffer__imgwrapper-newprice-night {
@@ -2179,6 +2180,96 @@ ul {
   line-height: 48px;
   letter-spacing: -1.44px;
   margin-bottom: 16px;
+}
+
+.popularlist {
+  margin-bottom: 60px;
+}
+.popularlist__booknow {
+  color: #bdbdbd;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.popularlist__content {
+  color: #777;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+.popularlist__desc {
+  text-align: center;
+  background-color: #fff;
+}
+.popularlist__icons {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: #fff;
+  margin: -30px auto 28px;
+  z-index: 1;
+  position: relative;
+  max-width: 256px;
+}
+.popularlist__inner {
+  background-color: #222;
+  text-align: center;
+  padding: 48px 20px;
+}
+.popularlist__photo {
+  width: 335px;
+  height: 218px;
+  margin: 0 auto;
+}
+.popularlist__pretitle {
+  color: #bdac8d;
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 2.8px;
+  margin-bottom: 25px;
+}
+.popularlist__price {
+  color: #bead8e;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 19px;
+}
+.popularlist__roomwrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 335px;
+  background-color: #fff;
+  padding-bottom: 28px;
+}
+.popularlist__title {
+  color: #fff;
+  font-family: Old Standard TT;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  margin-bottom: 48px;
+}
+.popularlist__room-title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  margin-bottom: 16px;
+}
+.popularlist__swiper {
+  position: relative;
+  max-width: 380px;
+  --swiper-navigation-top-offset: 30%;
+  --swiper-navigation-sides-offset: 0px;
 }
 
 html,
