@@ -67,10 +67,9 @@
         text-decoration: none;
     }
     &__goobdbye-icon:hover {
-        background-color: #bead8e;
         transform: scale(1.2);
         cursor: pointer;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        filter:contrast(100);
     }
     &__wrapper {
         text-align: left;

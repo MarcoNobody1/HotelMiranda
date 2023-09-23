@@ -28,6 +28,9 @@
 .header__logo-name-hotel {
   font-weight: 700;
 }
+.header__logo-name-hotel:hover {
+  cursor: pointer;
+}
 .header__logo-name-miranda {
   font-weight: 400;
 }
@@ -71,11 +74,17 @@
 .header__menuiconburguer--closed {
   display: none;
 }
+.header__menuiconburguer:hover {
+  cursor: pointer;
+}
 .header__menuiconcross {
   padding-left: 20px;
 }
 .header__menuiconcross--closed {
   display: none;
+}
+.header__menuiconcross {
+  cursor: pointer;
 }
 .header__icons {
   display: flex;
@@ -92,13 +101,17 @@
   display: none;
   cursor: pointer;
 }
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
 
 @media only screen and (min-width: 1000px) {
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 13%;
+    margin: 0 auto;
     width: 74%;
     top: 2.5rem;
     max-width: 1420px;
@@ -107,6 +120,8 @@
     background-color: #fff;
     position: absolute;
     gap: 0;
+    left: 0;
+    right: 0;
   }
   .header--hidden {
     top: -8.75rem;
@@ -1122,6 +1137,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   overflow: hidden;
   width: 100%;
   height: 114.5px;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 .menu__donut {
   width: 114.5px;
@@ -1450,10 +1467,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-decoration: none;
 }
 .footer__goobdbye-icon:hover {
-  background-color: #bead8e;
   transform: scale(1.2);
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: contrast(100);
 }
 .footer__wrapper {
   text-align: left;
@@ -2468,7 +2484,7 @@ ul {
   color: #fff;
 }
 .aboutusinfo__facility:hover .aboutusinfo__facility-icon {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: brightness(10);
 }
 .aboutusinfo__facility-title {
   color: #222;
@@ -2702,6 +2718,7 @@ ul {
 .aboutuscounter__achievement-arrow {
   fill: #bead8e;
   width: 32px;
+  margin-right: 10px;
 }
 .aboutuscounter__achievement-icon {
   fill: #bead8e;
