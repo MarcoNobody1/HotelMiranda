@@ -32,6 +32,10 @@
         font-weight: 700;
     }
 
+    &__logo-name-hotel:hover{
+        cursor: pointer;
+    }
+
     &__logo-name-miranda {
         font-weight: 400;
     }
@@ -83,11 +87,18 @@
         }
     }
 
+    &__menuiconburguer:hover {
+        cursor: pointer;
+    }
+
     &__menuiconcross {
         padding-left: 20px;
         &--closed {
             display: none;
         }
+    }
+    &__menuiconcross {
+        cursor: pointer;
     }
     &__icons {
         display: flex;
@@ -105,6 +116,10 @@
         display: none;
         cursor: pointer;
     }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -112,7 +127,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 13%;
+        margin: 0 auto;
         width: 74%;
         top: 2.5rem;
         max-width: 1420px;
@@ -121,6 +136,8 @@
         background-color: #fff;
         position: absolute;
         gap: 0;
+        left: 0;
+        right: 0;
 
         &--hidden {
             top: -8.75rem;
