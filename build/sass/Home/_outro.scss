@@ -1,0 +1,61 @@
+@import "../variables";
+
+.outro {
+    background-color: #222;
+    padding: 48px 82px;
+    margin-bottom: 60px;
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__skill {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 210px;
+        margin-bottom: 60px;
+    }
+    &__skill:last-child {
+        margin-bottom: 0;
+    }
+    &__skill-content {
+        @include label($theme: #999);
+        @media only screen and (max-width: 375px) {
+            font-size: 0.7rem;
+        }
+    }
+    &__skill-icon {
+        width: 78px;
+        margin-bottom: 16px;
+    }
+    &__skill-title {
+        margin: 0;
+    }
+    &__skill-title-data {
+        @include h2title;
+        margin: 0;
+        display: inline-block;
+        @media only screen and (max-width: 375px) {
+            font-size: 3rem;
+        }
+    }
+    &__skill-title-plus {
+        @include label;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .outro {
+        margin-bottom: 120px;
+        &__inner {
+            max-width: 1170px;
+            margin: 0 auto;
+            display: flex;
+        }
+        &__skill {
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+    }
+}

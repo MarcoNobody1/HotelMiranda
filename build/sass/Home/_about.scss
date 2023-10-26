@@ -1,0 +1,163 @@
+@import "../variables";
+
+.about {
+    margin-bottom: 60px;
+    &__cards {
+        margin-top: -85px;
+    }
+    &__cards-cardone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+    &__cards-cardone-img {
+        width: 270px;
+        height: 300px;
+        object-fit: cover;
+    }
+    &__cards-cardone-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 270px;
+        background-image: url("../assets/AboutUs-Card-One-Background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.02);
+    }
+    &__cards-cardone-skill-icon {
+        margin-top: 54px;
+        margin-bottom: 29.5px;
+    }
+    &__cards-cardone-skill-text {
+        @include cardtext;
+        margin: 0 35.2px 38.33px;
+    }
+    &__cards-cardone-skill-title {
+        @include h4title;
+        margin-bottom: 21px;
+    }
+    &__cards-cardtwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__cards-cardtwo-img {
+        width: 270px;
+        height: 300px;
+        object-fit: cover;
+    }
+    &__cards-cardtwo-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #222;
+        max-width: 270px;
+    }
+    &__cards-cardtwo-skill-icon {
+        margin-top: 54px;
+        margin-bottom: 29.5px;
+    }
+    &__cards-cardtwo-skill-text {
+        @include cardtext($theme: #fff);
+        margin: 0 35.2px 38.33px;
+    }
+    &__cards-cardtwo-skill-title {
+        @include h4title($theme: #fff);
+        margin-bottom: 21px;
+    }
+    &__intro {
+        background: #f9f9f9;
+        padding: 38px 20px 175px 20px;
+    }
+    &__intro-bookbtn {
+        @include button;
+        display:block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    &__intro-content {
+        color: #777;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        max-width: 400px;
+        margin: 0 auto 24px;
+    }
+    &__intro-maintitle {
+        font-family: Old Standard TT;
+        font-size: 3.5rem;
+        font-weight: 400;
+        letter-spacing: -1.2px;
+        color: #111;
+        max-width: 400px;
+        margin: 0 auto 16px;
+
+        @media only screen and (max-width: 375px) {
+            font-size: 3rem;
+        }
+    }
+    &__intro-pretitle {
+        @include h6title($theme: #777);
+        text-transform: uppercase;
+        max-width: 400px;
+        margin: 0 auto 32px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-top: 150px;
+        margin-bottom: 118px;
+
+        &__intro {
+            background-color: #f9f9f9;
+            padding: 38px 20px 175px 20px;
+            width: 56.45%;
+            height: 750px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding-left: 17%;
+        }
+        &__intro-content {
+            max-width: 397px;
+        }
+        &__intro-maintitle {
+            margin-bottom: 18px;
+            max-width: 457px;
+        }
+        &__intro-bookbtn {
+            width: max-content;
+        }
+        &__cards {
+            margin-top: 0px;
+            display: flex;
+            margin-right: -109px;
+            position: relative;
+            gap: 30px;
+        }
+        &__cards-cardone {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 0px;
+            gap: 30px;
+            justify-content: flex-end;
+        }
+        &__cards-cardtwo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        &__cards-cardone-skill {
+            margin-top: -20px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import "../variables";
+
+.contactoptions {
+    margin-bottom: 60px;
+    &__content {
+        color: #777;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    &__inner {
+        max-width: 375px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+    }
+    &__option1 {
+        display: flex;
+        background-image: url("../../assets/ContactPage/bg1.png");
+        background-size: contain;
+        align-items: flex-start;
+        padding: 53px 71px 57px 32px;
+        gap: 27px;
+    }
+    &__option2 {
+        display: flex;
+        background-image: url("../../assets/ContactPage/bg2.png");
+        background-size: contain;
+        align-items: flex-start;
+        padding: 53px 71px 57px 32px;
+        gap: 27px;
+    }
+    &__option3 {
+        display: flex;
+        background-image: url("../../assets/ContactPage/bg3.png");
+        background-size: contain;
+        align-items: flex-start;
+        padding: 53px 71px 57px 32px;
+        gap: 27px;
+        margin-bottom: 24px;
+    }
+    &__option1:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &__option2:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &__option3:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &__title {
+        color: #222;
+        font-family: Old Standard TT;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+    &__img{
+        max-height: 200px;
+        object-fit: cover;
+    }
+}

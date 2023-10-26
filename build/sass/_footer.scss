@@ -1,0 +1,264 @@
+@import "./variables";
+
+.footer {
+    &__contactus {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    &__contactus-group {
+        display: flex;
+        gap: 21.55px;
+        margin-bottom: 61px;
+    }
+    &__contactus-group:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    &__contactus-group:last-child {
+        margin-bottom: 30px;
+    }
+    &__contactus-group-content {
+        color: #777;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__contactus-group-icon {
+        width: 40px;
+    }
+    &__contactus-group-title {
+        color: #222;
+        font-family: Old Standard TT;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__contactus-title {
+        @include h5title;
+        margin-bottom: 34px;
+    }
+    &__endbar {
+        background: #f8f8f8;
+        padding: 16px 20px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+    }
+    &__endbar-copy {
+        color: #222;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.48px;
+        display: inline-block;
+        margin: 0 24px 24px 0;
+        text-decoration: none;
+    }
+    &__endbar-terms {
+        color: #222;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.48px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    &__goobdbye-icon:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        filter:contrast(100);
+    }
+    &__wrapper {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    &__goodbye {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    &__goodbye-content {
+        color: #777;
+        font-family: Archivo;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 700px;
+        margin-bottom: 32px;
+    }
+    &__goodbye-icongroup {
+        display: flex;
+        gap: 26px;
+        margin-bottom: 40px;
+    }
+    &__inner {
+        padding: 32px 22px;
+        background-image: url("../assets/Footer/footerbgapp.png");
+        background-size: cover;
+        margin: 0 auto;
+    }
+    &__logo {
+        display: flex;
+        gap: 28.11px;
+        align-items: center;
+        margin-bottom: 47px;
+    }
+    &__logo-name {
+        font-family: Archivo;
+        letter-spacing: 2.6px;
+        font-size: 1.625rem;
+    }
+    &__logo-name-hotel {
+        font-weight: 700;
+    }
+    &__logo-name-miranda {
+        font-weight: 400;
+    }
+    &__services {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    &__services-content {
+        display: flex;
+        max-height: 288px;
+        margin-bottom: 32px;
+    }
+    &__services-listelement::before {
+        content: "+";
+        margin-right: 5px;
+    }
+    &__services-listelement {
+        color: #777;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 48px;
+        margin-right: 19px;
+        @media only screen and (max-width: 375px) {
+            font-size: 0.8rem;
+        }
+    }
+    &__services-title {
+        @include h5title;
+        margin-bottom: 24px;
+    }
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        &__inner {
+            padding: 100px 22px;
+            background-image: url("../assets/Footer/footerbgweb.png");
+            background-size: cover;
+            margin: 0 auto;
+            display: flex;
+        }
+        &__goodbye-content {
+            max-width: 270px;
+            margin-bottom: 32px;
+
+        }
+        &__goodbye {
+            max-width: 600px;
+            margin: 0 0 0 auto;
+        }
+        &__services-listelement {
+            color: #777;
+            font-family: Roboto;
+            font-size: 0.7rem;
+            margin-right: 0px;
+        }
+        &__wrapper{
+            display: flex;
+            width: 100%;
+            max-width: none;
+            justify-content: space-around;
+        }
+    }
+
+
+    .jello:hover {
+        -webkit-animation: jello 1s both;
+                animation: jello 1s both;
+    }
+
+    @-webkit-keyframes jello {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(0.85, 1.15, 1);
+                  transform: scale3d(0.85, 1.15, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+      @keyframes jello {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(0.85, 1.15, 1);
+                  transform: scale3d(0.85, 1.15, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+      
+}
+
+@media only screen and (min-width: 1110px) {
+    .footer{
+        &__services-listelement {
+            font-size: 1rem;
+        }
+    }
+}

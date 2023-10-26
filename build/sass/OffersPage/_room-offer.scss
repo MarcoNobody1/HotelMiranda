@@ -1,0 +1,122 @@
+@import "../variables";
+
+.roomoffer {
+    &__btn {
+        @include button;
+    }
+    &__content {
+        @include cardtext($theme: #777);
+        line-height: 24px;
+        text-align: left;
+    }
+    &__contentwrapper {
+        margin-bottom: 24px;
+    }
+    &__facilities {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 200px;
+        margin-bottom: 24px;
+        gap: 17px;
+        width: 100%;
+    }
+    &__facility:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &__facility-desc {
+        color: #777;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    &__imgwrapper {
+        margin: 0 auto 16px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    &__imgwrapper-img {
+        max-width: 335px;
+        max-height: 160px;
+        width: 100%;
+    }
+    &__imgwrapper-newprice-night {
+        color: #de5777;
+        font-family: Archivo;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+    &__imgwrapper-newprice-price {
+        color: #de5777;
+        text-align: right;
+        font-family: Archivo;
+        font-size: 1.875rem;
+        font-weight: 700;
+    }
+    &__imgwrapper-newprice {
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+        text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    &__imgwrapper-newprice:hover {
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+    &__imgwrapper-newprice-price:hover {
+        color: #b4183d;
+    }
+    &__imgwrapper-prevprice {
+        position: absolute;
+        right: 20px;
+        bottom: 40px;
+        text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    &__imgwrapper-prevprice-night {
+        color: #bead8e;
+        font-family: Archivo;
+        font-size: 0.688rem;
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    &__imgwrapper-prevprice-price {
+        color: #bead8e;
+        text-align: right;
+        font-family: Archivo;
+        font-size: 1.438rem;
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    &__inner {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    &__offer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 32px;
+    }
+    &__pretitle {
+        color: #777;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    &__title {
+        color: #222;
+        font-family: Old Standard TT;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.44px;
+        margin-bottom: 16px;
+    }
+}

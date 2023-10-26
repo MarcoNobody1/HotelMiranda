@@ -1,0 +1,150 @@
+@mixin button($theme: #bead8e) {
+    background: $theme;
+    font-size: 0.875rem;
+    font-family: Archivo;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2.8px;
+    padding: 1.406rem 2.938rem;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        transition: all 250ms ease-out;
+        transform: scale(1.1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &:active {
+        transition: all 150ms ease-out;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    }
+}
+
+@mixin h6title($theme: #fff) {
+    font-family: Archivo;
+    font-size: 0.813rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    color: $theme;
+}
+
+@mixin h4title($theme: #111) {
+    color: $theme;
+    font-family: Old Standard TT;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+}
+
+@mixin h5title($theme: #222) {
+    color: #222;
+    font-family: Old Standard TT;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+}
+
+@mixin h3title {
+    color: #222;
+    font-family: Old Standard TT;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -1.2px;
+}
+
+@mixin h2title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.4%;
+}
+
+@mixin cardtext($theme: #111) {
+    color: $theme;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+@mixin h1title($theme: #fff) {
+    font-family: Old Standard TT;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    color: $theme;
+}
+
+@mixin h1titleweb($theme: #fff) {
+    color: $theme;
+    font-family: Old Standard TT;
+    font-size: 7.5rem;
+    font-weight: 400;
+    letter-spacing: -3.6px;
+}
+
+@mixin label($theme: #fff) {
+    color: $theme;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@mixin roomprice($theme: #bead8e) {
+    color: $theme;
+    font-family: Archivo;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@mixin linkprev($theme: #222) {
+    color: $theme;
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    text-decoration: none;
+}
+
+@mixin date() {
+    width: 100%;
+    max-width: 300px;
+    height: 33px;
+    color: #686868;
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 2px solid #bead8e;
+    border-right: none;
+}
+
+@mixin pricetitle($theme: #bead8e, $font: 2.688rem) {
+    color: $theme;
+    text-align: center;
+    font-family: Archivo;
+    font-size: $font;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.688rem;
+}
+
+@mixin facilitiescard($bg: url("../assets/Facilities__swiper/bg-card1.png")) {
+    background-image: $bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin aboutfacilitiescard($bg: url("../assets/AboutUsPage/bg1.png")){
+    background-image: $bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

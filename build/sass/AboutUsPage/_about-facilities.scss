@@ -1,0 +1,91 @@
+@import "../variables";
+
+.aboutcard1 {
+    @include aboutfacilitiescard;
+}
+.aboutcard2 {
+    @include aboutfacilitiescard($bg: url("../../assets/AboutUsPage/bg2.png"));
+}
+.aboutcard3 {
+    @include aboutfacilitiescard($bg: url("../../assets/AboutUsPage/bg3.png"));
+}
+.aboutcard4 {
+    @include aboutfacilitiescard($bg: url("../../assets/AboutUsPage/bg4.png"));
+}
+.aboutcard5 {
+    @include aboutfacilitiescard($bg: url("../../assets/AboutUsPage/bg5.png"));
+}
+.aboutcard6 {
+    @include aboutfacilitiescard($bg: url("../../assets/AboutUsPage/bg6.png"));
+}
+.aboutusfacilities {
+    background: #222;
+    text-align: center;
+    margin-bottom: 60px;
+    &__inner {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 48px 20px;
+    }
+    &__pretitle {
+        color: #fff;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        margin-bottom: 16px;
+    }
+    &__swiper {
+        width: 100%;
+        text-align: left;
+        --swiper-pagination-bottom: 0px;
+        --swiper-pagination-bullet-inactive-color: #333;
+    }
+    &__swiper-card {
+        width: 370px;
+        height: 350px;
+        padding-left: 38px;
+        padding-top: 73px;
+        @media only screen and (max-width: 375px) {
+            width: 320px;
+            height: 300px;
+        }
+    }
+    &__swiper-card-content {
+        color: #FFF;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 250px;
+        @media only screen and (max-width: 375px) {
+            font-size: 0.6rem;
+        }
+    }
+    &__swiper-card-img {
+        margin-bottom: 37.94px;
+    }
+    &__swiper-card-title {
+        @include h4title($theme:#FFF);
+        margin-bottom: 28.06px;
+        @media only screen and (max-width: 375px) {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+    }
+    &__title {
+        color: #fff;
+        font-family: Old Standard TT;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        margin-bottom: 32px;
+    }
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #BEAD8E !important;
+}
+

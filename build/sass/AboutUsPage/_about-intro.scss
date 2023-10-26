@@ -1,0 +1,50 @@
+@import "../variables";
+
+.aboutusintro {
+    background: #333;
+    height: 335px;
+    margin-bottom: 60px;
+    &__inner {
+        padding: 145px 20px 0 20px;
+        position: relative;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    &__linkbar {
+        @include linkprev;
+    }
+    &__linkprev {
+        @include linkprev;
+    }
+    &__linktext {
+        @include linkprev($theme:#BEAD8E);
+        
+    }
+    &__pages {
+        width: 160px;
+        height: 49px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+    }
+    &__pretitle {
+        @include h6title;
+        margin-bottom: 16px;
+    }
+    &__title {
+        @include h1title;
+        margin-bottom: 47px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .aboutusintro {
+        max-width: none;
+        &__inner{
+            max-width: 950px;
+        }
+    }
+}

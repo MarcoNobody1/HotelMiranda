@@ -1,0 +1,124 @@
+@import "../variables";
+
+.facilities {
+    text-align: center;
+    margin-bottom: 60px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 375px;
+    }
+    &__pretitle {
+        @include h6title($theme: #777);
+        margin-bottom: 24px;
+    }
+    &__swiper {
+        width: 100%;
+        text-align: left;
+    }
+    &__swiper-card {
+        width: 370px;
+        height: 350px;
+        padding-left: 38px;
+        @media only screen and (max-width: 375px) {
+            width: 320px;
+            height: 300px;
+        }
+    }
+    &__swiper-card-content {
+        color: #777;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 250px;
+    }
+    &__swiper-card-img {
+        width: 70px !important;
+        height: 70px !important;
+        margin-bottom: 37.94px;
+    }
+    &__swiper-card-title {
+        @include h4title;
+        margin-bottom: 28.06px;
+    }
+    &__title {
+        @include h1title($theme: #222);
+        margin-bottom: 32px;
+    }
+}
+
+.cardone {
+    @include facilitiescard;
+}
+.cardtwo {
+    @include facilitiescard($bg: url(../assets/Facilities__swiper/bg-card2.png));
+}
+.cardthree {
+    @include facilitiescard($bg: url(../assets/Facilities__swiper/bg-card3.png));
+}
+.cardfour {
+    @include facilitiescard($bg: url(../assets/Facilities__swiper/bg-card4.png));
+}
+.cardfive {
+    @include facilitiescard($bg: url(../assets/Facilities__swiper/bg-card5.png));
+}
+.cardsix {
+    @include facilitiescard($bg: url(../assets/Facilities__swiper/bg-card6.png));
+}
+
+@media only screen and (min-width: 1000px) {
+    .facilities {
+        text-align: left;
+        max-width: 100%;
+        margin: 0 auto 47px;
+        &__inner {
+            margin: 0 auto;
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__swiper {
+            max-width: 1170px;
+        }
+        &__swiper-card {
+            width: 80%;
+            height: auto;
+            padding-left: 38px;
+            max-width: 100%;
+        }
+        &__swiper-card-img {
+            max-width: 100px;
+            height: auto;
+        }
+        &__pretitle {
+            margin-bottom: 26px;
+        }
+        &__title {
+            font-size: 5rem;
+            margin-bottom: 40.84px;
+            letter-spacing: -2.4px;
+        }
+    }
+    .facilitiescard {
+        width: 100%;
+        height: 50%;
+        max-width: 370px;
+        max-height: 350px;
+        
+    }
+    .wrapperfacilities {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 100%;
+        gap: 30px;
+        justify-items: center;
+        :hover {
+            transform: scale(1.2);
+            z-index: 10;
+            cursor: pointer;
+        }
+    }
+}

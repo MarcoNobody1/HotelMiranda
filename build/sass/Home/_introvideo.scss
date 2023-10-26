@@ -1,0 +1,108 @@
+@import "../variables";
+
+.introvideo {
+    background: #222;
+    max-width: none;
+    padding: 64px 20px 48px;
+    margin-bottom: 60px;
+
+    &__innercontent {
+        margin: 0 auto;
+        max-width: 335px;
+    }
+
+    &__button {
+        @include button;
+        display: block;
+    }
+    &__content {
+        color: #c2c2c2;
+        font-family: Archivo;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+    &__pretitle {
+        @include h6title($theme: #bdac8d);
+        display: block;
+        width: auto;
+        margin-bottom: 32px;
+    }
+    &__title {
+        @include h1title;
+        margin-bottom: 32px;
+    }
+    &__video {
+        display: block;
+        margin-bottom: 36px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .introvideo {
+        &__video {
+            width: 200px;
+            height: 161px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .introvideo {
+        background: rgb(34, 34, 34);
+        background: linear-gradient(
+            90deg,
+            rgba(34, 34, 34, 1) 0%,
+            rgba(34, 34, 34, 1) 70%,
+            rgba(173, 157, 130, 1) 70%,
+            rgba(173, 157, 130, 1) 100%
+        );
+        max-width: none;
+        max-height: 700px;
+        padding: 64px 20px 48px;
+        margin-bottom: 118.16px;
+
+        &__innercontent {
+            width: 70%;
+            max-width: none;
+        }
+
+        &__button {
+            @include button;
+            display: block;
+        }
+
+        &__layout {
+            display: block;
+            width: 95%;
+            position: relative;
+        }
+        &__content {
+            color: #c2c2c2;
+            font-family: Archivo;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 32px;
+            max-width: 45%;
+        }
+        &__pretitle {
+            @include h6title($theme: #bdac8d);
+            display: block;
+            max-width: 500px;
+            margin-bottom: 32px;
+        }
+        &__title {
+            @include h1title;
+            margin-bottom: 32px;
+            max-width: 50%;
+        }
+        &__video {
+            position: absolute;
+            right: 0;
+            top:15%,
+        }
+    }
+}

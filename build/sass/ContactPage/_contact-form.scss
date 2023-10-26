@@ -1,0 +1,80 @@
+@import "../variables";
+
+.contactform {
+    &__btn {
+        @include button;
+        margin-bottom: 60px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        input {
+            height: 67px;
+            width: 100%;
+            padding-left: 52px;
+            color: #777;
+            font-family: Roboto;
+            font-size: 1rem;
+            font-weight: 400;
+            background: #F8F8F8;
+            border: none;
+        }
+        textarea {
+            width: 100%;
+            height: 175px;
+            padding: 25px 0 0 52px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            color: #777;
+            font-family: Roboto;
+            font-size: 1rem;
+            font-weight: 400;
+            background: #F8F8F8;
+            border: none;
+            margin-bottom: 36px;
+        }
+    }
+    &__inner {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__inputwrapper {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 335px;
+        margin: 0 auto;
+    }
+}
+
+#name {
+    background-image: url('../../assets/ContactPage/fullname.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+#email {
+    background-image: url('../../assets/ContactPage/email.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+#phone {
+    background-image: url('../../assets/ContactPage/phone.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+#subject {
+    background-image: url('../../assets/ContactPage/subject.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+#message {
+    background-image: url('../../assets/ContactPage/message.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 17%;
+}

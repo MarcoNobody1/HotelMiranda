@@ -1,0 +1,273 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+    background-color: #fff;
+    position: fixed;
+    gap: 32px;
+    z-index: 100;
+
+    &__logo {
+        display: flex;
+        gap: 0.845rem;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo-img {
+        box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+        width: 36px;
+    }
+
+    &__logo-name {
+        font-family: Archivo;
+        letter-spacing: 2.6px;
+        font-size: 0.781rem;
+    }
+
+    &__logo-name-hotel {
+        font-weight: 700;
+    }
+
+    &__logo-name-hotel:hover{
+        cursor: pointer;
+    }
+
+    &__logo-name-miranda {
+        font-weight: 400;
+    }
+
+    &__menucontent {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 198px;
+        top: 70px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
+        background-color: #fff;
+        z-index: 0;
+        font-family: Archivo;
+        font-weight: 600;
+        padding-left: 21px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__menucontent-about {
+        color: #111;
+        text-decoration: none;
+    }
+
+    &__menucontent-contact {
+        color: #111;
+        text-decoration: none;
+    }
+
+    &__menucontent-offers {
+        color: #111;
+        text-decoration: none;
+    }
+
+    &__menucontent-rooms {
+        color: #111;
+        text-decoration: none;
+    }
+
+    &__menuiconburguer {
+        padding-left: 20px;
+        &--closed {
+            display: none;
+        }
+    }
+
+    &__menuiconburguer:hover {
+        cursor: pointer;
+    }
+
+    &__menuiconcross {
+        padding-left: 20px;
+        &--closed {
+            display: none;
+        }
+    }
+    &__menuiconcross {
+        cursor: pointer;
+    }
+    &__icons {
+        display: flex;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    &__icons-profile {
+        cursor: pointer;
+    }
+
+    &__icons-search {
+        cursor: pointer;
+    }
+    &__icons-menu {
+        display: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 74%;
+        top: 2.5rem;
+        max-width: 1420px;
+        height: 120px;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+        background-color: #fff;
+        position: absolute;
+        gap: 0;
+        left: 0;
+        right: 0;
+
+        &--hidden {
+            top: -8.75rem;
+        }
+
+        &--float {
+            position: fixed;
+            top: 2.5rem;
+            z-index: 100;
+        }
+
+        &__logo {
+            display: flex;
+            gap: 1.757rem;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        &__logo-img {
+            box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+            width: 80px;
+        }
+
+        &__logo-name {
+            font-family: Archivo;
+            letter-spacing: 2.6px;
+        }
+
+        &__logo-name-hotel {
+            font-weight: 700;
+        }
+
+        &__logo-name-miranda {
+            font-weight: 400;
+        }
+
+        &__menucontent {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: auto;
+            height: auto;
+            top: 0;
+            box-shadow: none;
+            background-color: transparent;
+            z-index: 0;
+            font-family: Archivo;
+            font-weight: 600;
+            padding-left: 0px;
+            width: 100%;
+        }
+
+        &__menucontent-contact {
+            color: #111;
+            text-decoration: none;
+        }
+
+        &__menuiconburguer {
+            display: none;
+        }
+
+        &__menuiconcross {
+            margin-right: 4px;
+            &--closed {
+                display: none;
+            }
+        }
+        &__icons {
+            display: flex;
+            gap: 12px;
+            padding-right: 20px;
+        }
+
+        &__icons-profile {
+            border: 2px solid rgba(133, 133, 133, 0.3);
+            padding: 1.125rem;
+            margin-right: 0%;
+        }
+
+        &__icons-search {
+            border: 2px solid rgba(133, 133, 133, 0.3);
+            padding: 1.125rem;
+        }
+        &__icons-menu {
+            display: block;
+            border: 2px solid rgba(133, 133, 133, 0.3);
+            padding: 1.125rem;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header {
+        &__logo-name {
+            font-size: 1.625rem;
+        }
+        &__menucontent {
+            margin-left: 6.5%;
+            justify-content: flex-start;
+            gap: 24px;
+        }
+    }
+}
+
+.focus {
+    -webkit-animation: fade-in-fwd 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-fwd 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}

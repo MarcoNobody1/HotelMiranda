@@ -1,0 +1,119 @@
+@import "../variables";
+
+.rooms {
+    text-align: center;
+    margin-bottom: 30px;
+
+    &__desc {
+        position: relative;
+        background: #fff;
+        z-index: 2;
+        padding: 19px 24px;
+        margin: -25px auto 0;
+        max-width: 335px;
+    }
+    &__desc-content {
+        color: #777;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin-bottom: 12px;
+    }
+    &__desc-night {
+        @include pricetitle($font: 0.813rem);
+    }
+    &__desc-price {
+        @include pricetitle;
+    }
+    &__desc-title {
+        @include h3title;
+        margin-bottom: 12px;
+    }
+    &__icons {
+        position: relative;
+        width: max-content;
+        padding: 12px 24px;
+        background: #fff;
+        margin: 0 auto -22px auto;
+        z-index: 2;
+
+        img {
+            margin-right: 16px;
+        }
+        :last-child {
+            margin-right: 0;
+        }
+    }
+    &__pretitle {
+        @include h6title($theme: #777);
+        margin-bottom: 24px;
+    }
+    &__title {
+        @include h1title($theme: #222);
+        margin-bottom: 24px;
+    }
+    &__swiper {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #bdac8d;
+    transform: scale(1.2);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 10px !important;
+}
+.sliderooms {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    max-width: 550px;
+    --swiper-navigation-size: 32px;
+    --swiper-navigation-color: black;
+    :hover {
+        --swiper-navigation-color: white;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rooms {
+        max-width: none;
+        &__swiper {
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .sliderooms {
+        width: 700px;
+    }
+    .sliderooms img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    .swiper {
+        max-width: none;
+        --swiper-navigation-sides-offset: 110px;
+    }
+}
