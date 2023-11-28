@@ -4,7 +4,7 @@ El proyecto **Hotel Miranda** se centra en la creación de la página web princi
 
 ## Objetivo del Proyecto
 
-El objetivo principal de este proyecto es llevar a cabo la maquetación del sitio web del Hotel Miranda, proporcionando información detallada sobre sus prestaciones y adaptar los componentes para una futura implementación de PHP que permita a los usuarios realizar reservas de habitaciones.
+El objetivo principal de este proyecto es llevar a cabo la maquetación del sitio web del Hotel Miranda, proporcionando información detallada sobre sus prestaciones y adaptar los componentes para una futura implementación de PHP que permita a los usuarios realizar reservas de habitaciones. (ver [Hotel Miranda (PHP)](https://github.com/MarcoNobody1/HotelMirandaPHP))
 
 ## Tareas
 
