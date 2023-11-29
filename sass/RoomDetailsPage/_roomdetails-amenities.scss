@@ -3,7 +3,7 @@
 .roomsamenities {
   padding: 0 20px 20px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 17px;
   &__allamenities {
     max-height: 250px;
     display: flex;
@@ -40,7 +40,7 @@
 @media only screen and (min-width: 1000px) {
     .roomsamenities{
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 0 auto 39px;
         &__allamenities{
             max-height: 180px;
         }
