@@ -1,8 +1,8 @@
-@mixin button($theme: #bead8e) {
+@mixin button($theme: #bead8e, $weight: 700) {
     background: $theme;
     font-size: 0.875rem;
     font-family: Archivo;
-    font-weight: 700;
+    font-weight: $weight;
     color: #fff;
     letter-spacing: 2.8px;
     padding: 1.406rem 2.938rem;
@@ -19,9 +19,9 @@
     }
 }
 
-@mixin h6title($theme: #fff) {
+@mixin h6title($theme: #fff, $font: 0.813rem) {
     font-family: Archivo;
-    font-size: 0.813rem;
+    font-size: $font;
     font-weight: 700;
     letter-spacing: 2.8px;
     color: $theme;
@@ -45,10 +45,10 @@
     letter-spacing: -0.72px;
 }
 
-@mixin h3title {
+@mixin h3title ($font: 1.75rem) {
     color: #222;
     font-family: Old Standard TT;
-    font-size: 1.75rem;
+    font-size: $font;
     font-style: normal;
     font-weight: 400;
     line-height: 2.25rem;
@@ -125,9 +125,9 @@
     border-right: none;
 }
 
-@mixin pricetitle($theme: #bead8e, $font: 2.688rem) {
+@mixin pricetitle($theme: #bead8e, $font: 2.688rem, $align: center) {
     color: $theme;
-    text-align: center;
+    text-align: $align;
     font-family: Archivo;
     font-size: $font;
     font-style: normal;
