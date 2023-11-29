@@ -104,7 +104,10 @@
 
 @media only screen and (min-width: 1000px) {
   .roomsdetails {
-
+    &__description {
+      max-width: 770px;
+      margin: 0 auto;
+    }
     &__photo {
       margin-top: -40px;
       position: relative;
@@ -129,6 +132,11 @@
 
 @media only screen and (min-width: 1200px) {
   .roomsdetails {
+    margin-bottom: 80px;
+
+    &__description {
+      margin: -350px 0 0;
+    }
     &__wrapper {
       flex-direction: row;
       align-items: flex-start;
