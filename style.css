@@ -684,17 +684,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .rooms {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  position: relative;
 }
 .rooms__desc {
   position: absolute;
   background: #fff;
   z-index: 2;
-  bottom: 0%;
+  bottom: -20%;
   left: 50%;
   transform: translate(-50%);
   padding: 8px 24px;
-  width: 335px;
+  width: 320px;
 }
 .rooms__desc-content {
   color: #777;
@@ -822,6 +823,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     transform: translate(-50%);
     padding: 19px 24px;
     max-width: 335px;
+    width: 335px;
   }
   .rooms__desc-price {
     color: #bead8e;
@@ -1125,9 +1127,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: relative;
   }
   .facilities__swiper-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     z-index: 10;
-    cursor: pointer;
   }
   .facilities__swiper-card-img {
     max-width: 100px;
