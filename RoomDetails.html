@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Hotel Miranda | Room Details</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" />
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
@@ -23,11 +24,12 @@
             alt="Menu Cross Icon">
         <div class="header__logo">
             <a href="../index.html"> <img class="header__logo-img" src="/assets/Logo.png" alt="Logo"></a>
-            <a href="/index.html"> <div class="header__logo-name focus">
-                <span class="header__logo-name-hotel">HOTEL</span>
-                <br>
-                <span class="header__logo-name-miranda">MIRANDA</span>
-            </div>
+            <a href="/index.html">
+                <div class="header__logo-name focus">
+                    <span class="header__logo-name-hotel">HOTEL</span>
+                    <br>
+                    <span class="header__logo-name-miranda">MIRANDA</span>
+                </div>
             </a>
         </div>
         <nav id="nav" class="header__menucontent header__menucontent--hidden">
@@ -49,9 +51,37 @@
             <div class="roomsintro__pages">
                 <a class="roomsintro__linkprev" href="../index.html">Home</a>
                 <span class="roomsintro__linkbar">|</span>
-                <span class="roomsintro__linktext">Room Details</span> 
+                <span class="roomsintro__linktext">Room Details</span>
             </div>
         </div>
+    </section>
+    <section class="roomsdetails">
+        <div class="roomsdetails__wrapper">
+            <div class="roomsdetails__data">
+                <div class="roomsdetails__specs">
+                    <div class="roomsdetails__specs--titlegroup">
+                        <h6 class="roomsdetails__specs--pretitle">DOUBLE BED</h6>
+                        <p class="roomsdetails__specs--title">LUXURY DOUBLE BED</p>
+                    </div>
+                    <div class="roomsdetails__specs--pricedetails">
+                        <span class="roomsdetails__specs--price">$345</span>
+                        <span class="roomsdetails__specs--night">/Night</span>
+                    </div>
+                </div>
+                <img class="roomsdetails__photo"
+                    src="https://dashboardgeneralassets.s3.eu-west-1.amazonaws.com/Fotos+Dashboard/room8.jpeg"
+                    alt="Room photo">
+            </div>
+            <form class="roomsdetails__form">
+                <p class="roomsdetails__form--title"></p>
+                <label for="checkin" class="roomsdetails__form--checkinlabel">Check In</label>
+                <input type="date" id="checkin" name="checkin" class="roomsdetails__form--inputcheckin">
+                <label for="checkout" class="roomsdetails__form--checkoutlabel">Check Out</label>
+                <input type="date" id="checkout" name="checkout" class="roomsdetails__form--inputcheckout">
+                <button type="submit" class="roomsdetails__form--button">Check Availability</button>
+            </form>
+        </div>
+        <p class="roomsdetails__description"></p>
     </section>
     <footer class="footer">
         <div class="footer__inner">
@@ -69,11 +99,16 @@
                     eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitat ion ullamco laboris nisi.</p>
                 <div class="footer__goodbye-icongroup">
-                   <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer"><img src="../assets/Footer/facebook logo.svg" alt="Facebook" class="footer__goobdbye-icon"></a> 
-                   <a href="https://twitter.com/home?lang=es" target="_blank" rel="noopener noreferrer"><img src="../assets/Footer/twitter logo.svg" alt="Twitter" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"><img src="../assets/Footer/behance logo.svg" alt="Behance" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><img src="../assets/Footer/linkedin logo.svg" alt="LinkedIn" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="../assets/Footer/youtube logo.svg" alt="Youtube" class="footer__goobdbye-icon"></a> 
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/Footer/facebook logo.svg" alt="Facebook" class="footer__goobdbye-icon"></a>
+                    <a href="https://twitter.com/home?lang=es" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/Footer/twitter logo.svg" alt="Twitter" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/Footer/behance logo.svg" alt="Behance" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/Footer/linkedin logo.svg" alt="LinkedIn" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/Footer/youtube logo.svg" alt="Youtube" class="footer__goobdbye-icon"></a>
                 </div>
             </div>
             <div class="footer__services">
@@ -114,7 +149,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="footer__link" rel="noopener" target="_blank" title="maps" href="https://maps.app.goo.gl/3PCGJd1gSEht7YACA">
+                <a class="footer__link" rel="noopener" target="_blank" title="maps"
+                    href="https://maps.app.goo.gl/3PCGJd1gSEht7YACA">
                     <div class="footer__contactus-group">
                         <img class="footer__contactus-group-icon" src="../assets/Footer/contact-maps.png"
                             alt="Google Maps Point">
