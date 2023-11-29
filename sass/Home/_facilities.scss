@@ -89,9 +89,8 @@
       max-width: 100%;
       position: relative;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.06);
         z-index: 10;
-        cursor: pointer;
       }
     }
     &__swiper-card-img {
