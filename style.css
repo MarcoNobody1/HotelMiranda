@@ -1989,6 +1989,138 @@ ul {
     max-width: 950px;
   }
 }
+.roomsdetails {
+  padding: 20px;
+}
+.roomsdetails__description {
+  color: #777;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.roomsdetails__form {
+  padding: 25px 25px 25px 19px;
+  display: flex;
+  flex-direction: column;
+}
+.roomsdetails__form--button {
+  background: #bead8e;
+  font-size: 0.875rem;
+  font-family: Archivo;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2.8px;
+  padding: 1.406rem 2.938rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 290px;
+  height: 60px;
+  margin-top: 20px;
+}
+.roomsdetails__form--button:hover {
+  transition: all 250ms ease-out;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.roomsdetails__form--button:active {
+  transition: all 150ms ease-out;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.roomsdetails__form--checkinlabel, .roomsdetails__form--checkoutlabel, .roomsdetails__form--emaillabel, .roomsdetails__form--fullnamelabel, .roomsdetails__form--phonelabel, .roomsdetails__form--specialrequestlabel {
+  color: #222;
+  text-align: left;
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.688rem;
+  display: inline-block;
+  width: 100%;
+}
+.roomsdetails__form--inputcheckin, .roomsdetails__form--inputcheckout, .roomsdetails__form--inputemail, .roomsdetails__form--inputfullname, .roomsdetails__form--inputphone {
+  width: 290px;
+  height: 60px;
+  background: #f8f8f8;
+  border: none;
+  color: #777;
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+.roomsdetails__form--inputspecialrequest {
+  width: 290px;
+  background: #f8f8f8;
+  border: none;
+  color: #777;
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 30px;
+}
+.roomsdetails__form--title {
+  color: #222;
+  text-align: center;
+  font-family: Archivo;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.54px;
+  margin-bottom: 35.88px;
+}
+.roomsdetails__photo {
+  width: 90vw;
+  max-width: 335px;
+  height: 20vh;
+  max-height: 214px;
+  margin-bottom: 24px;
+}
+.roomsdetails__specs--pretitle {
+  font-family: Archivo;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin-bottom: 15px;
+}
+.roomsdetails__specs--price {
+  color: #bead8e;
+  text-align: center;
+  font-family: Archivo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.688rem;
+}
+.roomsdetails__specs--price::after {
+  color: #bead8e;
+  text-align: center;
+  font-family: Archivo;
+  font-size: 0.813rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.688rem;
+  content: "/Night";
+}
+.roomsdetails__specs--title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  letter-spacing: -1.2px;
+  margin-bottom: 16px;
+}
+.roomsdetails__wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .roomshow {
   text-align: center;
 }
