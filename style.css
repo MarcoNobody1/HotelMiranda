@@ -2141,6 +2141,10 @@ ul {
 }
 
 @media only screen and (min-width: 1000px) {
+  .roomsdetails__description {
+    max-width: 770px;
+    margin: 0 auto;
+  }
   .roomsdetails__photo {
     margin-top: -40px;
     position: relative;
@@ -2162,11 +2166,63 @@ ul {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .roomsdetails {
+    margin-bottom: 80px;
+  }
+  .roomsdetails__description {
+    margin: -350px 0 0;
+  }
   .roomsdetails__wrapper {
     flex-direction: row;
     align-items: flex-start;
     gap: 5%;
     width: 100%;
+  }
+}
+.roomsamenities {
+  padding: 0 20px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.roomsamenities__allamenities {
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+.roomsamenities__group {
+  display: flex;
+  gap: 8px;
+}
+.roomsamenities__group--amenity {
+  color: #777;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+}
+.roomsamenities__title {
+  color: #222;
+  font-family: Old Standard TT;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 340px) {
+  .roomsamenities__allamenities {
+    max-height: 280px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .roomsamenities {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .roomsamenities__allamenities {
+    max-height: 180px;
   }
 }
 .roomshow {
