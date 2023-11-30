@@ -49,3 +49,8 @@ initOffersSwiper();
 window.addEventListener("resize", () => {
   initOffersSwiper();
 });
+
+const goToRoomDetails = () => {
+
+  window.location.href = 'RoomDetails.html';
+}

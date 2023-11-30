@@ -1,0 +1,49 @@
+@import "../variables";
+
+.roomsamenities {
+  padding: 0 20px 20px;
+  max-width: 500px;
+  margin: 0 auto 17px;
+  &__allamenities {
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    flex-wrap: wrap;
+  }
+  &__group {
+    display: flex;
+    gap: 8px;
+    &--amenity {
+      color: #777;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+  &__title {
+    @include h4title($theme: #222);
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+.roomsamenities{
+
+    &__allamenities{
+        max-height: 280px;
+    }
+}
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .roomsamenities{
+        max-width: 1000px;
+        margin: 0 auto 39px;
+        &__allamenities{
+            max-height: 180px;
+        }
+    }
+    
+    }

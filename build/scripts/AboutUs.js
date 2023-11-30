@@ -35,22 +35,58 @@ window.addEventListener("mousemove", (event) => {
   }
 });
 
+const facilitiesAboutUsSwiper = document.querySelector(
+  "#aboutusfacilities__swiper"
+);
+const facilitiesAboutUsWrapper = document.querySelector(
+  "#aboutusfacilities__swiperwrapper"
+);
+
 function initAboutusPaginationSwiper() {
-  var swiper = new Swiper("#aboutusfacilities__swiper", {
-    keyboard: true,
-    pagination: {
-      el: "#aboutusfacilities__pagination",
-    },
-  });
+  var swiper;
+  if (window.matchMedia("(max-width: 999px)").matches) {
+    facilitiesAboutUsSwiper.classList.add("swiper");
+    facilitiesAboutUsWrapper.classList.add("swiper-wrapper");
+    swiper = new Swiper("#aboutusfacilities__swiper", {
+      keyboard: true,
+      pagination: {
+        el: "#aboutusfacilities__pagination",
+      },
+    });
+  } else {
+    facilitiesAboutUsSwiper.classList.remove("swiper");
+    facilitiesAboutUsWrapper.classList.remove("swiper-wrapper");
+  }
 }
 
+const photosAboutUsSwiper = document.querySelector("#aboutusphotoswiper");
+const photosAboutUsWrapper = document.querySelector(
+  "#aboutusphotoswiperwrapper"
+);
+const photoSlides = document.querySelectorAll(".swiper-slide");
+
 function initAboutPhotoSwiper() {
-  var swiper2 = new Swiper("#aboutusphotoswiper", {
-    keyboard: true,
-    pagination: {
-      el: "#aboutuscounter__photopagination",
-    },
-  });
+  var swiper2;
+
+  if (window.matchMedia("(max-width: 999px)").matches) {
+    photosAboutUsSwiper.classList.add("swiper");
+    photosAboutUsWrapper.classList.add("swiper-wrapper");
+    for (let i = 0; i < photoSlides.length; i++) {
+      photoSlides[i].classList.add("swiper-slide");
+    }
+    swiper2 = new Swiper("#aboutusphotoswiper", {
+      keyboard: true,
+      pagination: {
+        el: "#aboutuscounter__photopagination",
+      },
+    });
+  } else {
+    photosAboutUsSwiper.classList.remove("swiper");
+    photosAboutUsWrapper.classList.remove("swiper-wrapper");
+    for (let i = 0; i < photoSlides.length; i++) {
+      photoSlides[i].classList.remove("swiper-slide");
+    }
+  }
 }
 
 initAboutusPaginationSwiper();
@@ -60,3 +96,8 @@ window.addEventListener("resize", () => {
   initAboutusPaginationSwiper();
   initAboutPhotoSwiper();
 });
+
+const goToRooms = () => {
+
+  window.location.href = 'Rooms.html';
+}

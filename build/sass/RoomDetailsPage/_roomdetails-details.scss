@@ -1,0 +1,147 @@
+@import "../variables";
+
+.roomsdetails {
+  padding: 20px;
+  margin-bottom: 60px;
+  &__description {
+    color: #777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__form {
+    padding: 25px 25px 25px 19px;
+    display: flex;
+    flex-direction: column;
+
+    &--button {
+      @include button($weight: 400);
+      text-transform: uppercase;
+      width: 290px;
+      height: 60px;
+      margin-top: 20px;
+    }
+    &--checkinlabel,
+    &--checkoutlabel,
+    &--emaillabel,
+    &--fullnamelabel,
+    &--phonelabel,
+    &--specialrequestlabel {
+      @include pricetitle($font: 0.875rem, $theme: #222, $align: left);
+      display: inline-block;
+      width: 100%;
+    }
+    &--inputcheckin,
+    &--inputcheckout,
+    &--inputemail,
+    &--inputfullname,
+    &--inputphone {
+      width: 290px;
+      height: 60px;
+      background: #f8f8f8;
+      border: none;
+      color: #777;
+      font-family: Archivo;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 30px;
+      text-transform: capitalize;
+    }
+    &--inputspecialrequest {
+      width: 290px;
+      background: #f8f8f8;
+      border: none;
+      color: #777;
+      font-family: Archivo;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 30px;
+    }
+    &--title {
+      color: #222;
+      text-align: center;
+      font-family: Archivo;
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: -0.54px;
+      margin-bottom: 35.88px;
+    }
+  }
+  &__photo {
+    width: 90vw;
+    max-width: 335px;
+    height: 20vh;
+    max-height: 214px;
+    margin-bottom: 24px;
+  }
+  &__specs {
+    &--pretitle {
+      @include h6title($theme: #777777, $font: 0.875rem);
+      margin-bottom: 15px;
+    }
+    &--price {
+      @include pricetitle($font: 2rem);
+
+      &::after {
+        @include pricetitle($font: 0.813rem);
+        content: "/Night";
+      }
+    }
+
+    &--title {
+      @include h3title($font: 2.5rem);
+      margin-bottom: 16px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .roomsdetails {
+    &__description {
+      max-width: 770px;
+      margin: 0 auto;
+    }
+    &__photo {
+      margin-top: -40px;
+      position: relative;
+      z-index: 1;
+      width: 770px;
+      height: 490px;
+      max-width: none;
+      max-height: none;
+    }
+    &__specs {
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 730px;
+      justify-content: space-between;
+      z-index: 2;
+      background-color: #fff;
+      padding: 38px 14px 29px 47px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .roomsdetails {
+    margin-bottom: 80px;
+
+    &__description {
+      margin: -350px 0 0;
+    }
+    &__wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 5%;
+      width: 100%;
+    }
+  }
+}

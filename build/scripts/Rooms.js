@@ -35,3 +35,8 @@ window.addEventListener("mousemove", (event) => {
     header.classList.remove("header--float");
   }
 });
+
+const goToRoomDetails = () => {
+
+  window.location.href = 'RoomDetails.html';
+}

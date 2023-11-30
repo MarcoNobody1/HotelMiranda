@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" />
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
@@ -23,11 +24,12 @@
             alt="Menu Cross Icon">
         <div class="header__logo">
             <a href="index.html"> <img class="header__logo-img" src="/assets/Logo.png" alt="Logo"></a>
-            <a href="index.html"> <div class="header__logo-name focus">
-                <span class="header__logo-name-hotel">HOTEL</span>
-                <br>
-                <span class="header__logo-name-miranda">MIRANDA</span>
-            </div>
+            <a href="index.html">
+                <div class="header__logo-name focus">
+                    <span class="header__logo-name-hotel">HOTEL</span>
+                    <br>
+                    <span class="header__logo-name-miranda">MIRANDA</span>
+                </div>
             </a>
         </div>
         <nav id="nav" class="header__menucontent header__menucontent--hidden">
@@ -46,11 +48,11 @@
         <div class="intro__info">
             <h6 class="intro__info-pretitle">THE ULTIMATE LUXURY EXPERIENCE</h6>
             <h1 class="intro__info-maintitle">The Perfect Base For You</h1>
-            <button type="button" class="intro__info-takebtn">TAKE A TOUR</button>
-            <button type="button" class="intro__info-learnbtn">LEARN MORE</button>
+            <button id="takeatour" onclick="scrollToFirstStop()" class="intro__info-takebtn">TAKE A TOUR</button>
+            <button type="button" onclick="goToAboutUs()" class="intro__info-learnbtn">LEARN MORE</button>
         </div>
 
-        <form name="dates-form" class="intro__form" action="" method="post">
+        <form name="dates-form" class="intro__form" id="checkavailability_form" action="" method="post">
             <label for="arrival" class="intro__form-arrivallbl">Arrival Date</label>
             <input name="arrival" type="date" id="arrival" class="intro__form-arrivalinp">
             <label for="departure" class="intro__form-departurelbl">Departure Date</label>
@@ -63,10 +65,13 @@
         <article class="about__intro">
             <h6 class="about__intro-pretitle">About Us</h6>
             <h1 class="about__intro-maintitle">Discover Our Underground.</h1>
-            <p class="about__intro-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button type="button" class="about__intro-bookbtn">BOOK NOW</button>
+            <p class="about__intro-content">Welcome to a narrative of passion and hospitality, where the essence of
+                Hotel Miranda comes to life beneath the surface. Unearth the story behind our establishment, a journey
+                that transcends mere accommodation. Delve into the depths of our commitment to exceptional service, the
+                rich history that shaped us, and the unparalleled experiences that await your arrival. Join us in
+                exploring the heartbeat of Hotel Miranda: a destination where every detail is meticulously crafted to
+                ensure an unforgettable stay.</p>
+            <button type="button" onclick="goToOffers()" class="about__intro-bookbtn">BOOK NOW</button>
         </article>
         <article class="about__cards">
             <div class="about__cards-cardone">
@@ -75,8 +80,8 @@
                 <div class="about__cards-cardone-skill">
                     <img src="/assets/AboutUs-Icon-One.svg" alt="" class="about__cards-cardone-skill-icon">
                     <h4 class="about__cards-cardone-skill-title">Strong Team</h4>
-                    <p class="about__cards-cardone-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor.</p>
+                    <p class="about__cards-cardone-skill-text"> Our dedicated professionals ensure a seamless blend of
+                        excellence and hospitality, shaping your stay with unparalleled service.</p>
                 </div>
 
             </div>
@@ -86,8 +91,8 @@
                 <div class="about__cards-cardtwo-skill">
                     <img src="/assets/AboutUs-Icon-Two.svg" alt="" class="about__cards-cardtwo-skill-icon">
                     <h4 class="about__cards-cardtwo-skill-title">Luxury Room</h4>
-                    <p class="about__cards-cardtwo-skill-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor.</p>
+                    <p class="about__cards-cardtwo-skill-text">Elevate your stay with opulent comfort and exquisite
+                        design, where every moment is a celebration of indulgence.</p>
                 </div>
             </div>
         </article>
@@ -129,10 +134,10 @@
         </div>
         <div class="rooms__desc">
             <h3 class="rooms__desc-title">Minimal Duplex Room</h3>
-            <p class="rooms__desc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore.</p>
+            <p class="rooms__desc-content">Experience modern simplicity in our Minimal Duplex Room. Clean lines, cozy
+                sleeping area, and a touch of charm await you for a unique stay.</p>
             <span class="rooms__desc-price">$345</span>
-            <span class="rooms__desc-night">/Night</span>
+            <span class="rooms__desc-night" id="firststop">/Night</span>
         </div>
     </section>
     <section class="introvideo">
@@ -140,15 +145,16 @@
             <div class="introvideo__layout">
                 <h6 class="introvideo__pretitle">INTRO VIDEO</h6>
                 <h1 class="introvideo__title">Meet With Our Luxury Place.</h1>
-                <p class="introvideo__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+                <p class="introvideo__content">Discover the allure of Hotel Miranda, where luxury meets tranquility.
+                    Immerse yourself in the enchanting surroundings that define our exquisite establishment. As you
+                    embark on a visual journey through the captivating video showcasing the scenic beauty surrounding
+                    the hotel, let the allure of our premium accommodations and breathtaking locale unfold. Welcome to a
+                    world where sophistication and serenity harmonize seamlessly: a haven awaiting your presence at
+                    Hotel Miranda.</p>
                 <iframe class="introvideo__video" width="335" height="270"
                     src="https://www.youtube.com/embed/Bu3Doe45lcU?controls=0&start=25&end=75&autoplay=0&"
                     title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <button type="button" class="introvideo__button">BOOK NOW</button>
+                <button type="button" onclick="goToOffers()" class="introvideo__button">BOOK NOW</button>
             </div>
         </div>
     </section>
@@ -163,8 +169,8 @@
                             <img src="/assets/Facilities__swiper/card 1 icon.png" alt="Core Features 1"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Have High Rating</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Embrace excellence with our high-rated services,
+                                where guest satisfaction is our hallmark.</p>
                         </div>
                     </div>
                     <div class="swiper-slide facilitiescard">
@@ -172,8 +178,8 @@
                             <img src="/assets/Facilities__swiper/card 2 icon.png" alt="Core Features 2"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Quiet Hours</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Unwind in serenity during our designated quiet
+                                hours, ensuring a peaceful retreat for all guests.</p>
                         </div>
                     </div>
                     <div class="swiper-slide facilitiescard">
@@ -181,8 +187,8 @@
                             <img src="/assets/Facilities__swiper/card 3 icon.png" alt="Core Features 3"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Best Locations</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Discover prime locations that complement your
+                                stay, offering convenience and accessibility.</p>
                         </div>
                     </div>
                     <div class="swiper-slide facilitiescard">
@@ -190,8 +196,8 @@
                             <img src="/assets/Facilities__swiper/card 4 icon.png" alt="Core Features 4"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Free Cancellation</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Flexibility at its finest: enjoy the freedom of
+                                free cancellation for a worry-free reservation experience.</p>
                         </div>
                     </div>
                     <div class="swiper-slide facilitiescard">
@@ -199,8 +205,8 @@
                             <img src="/assets/Facilities__swiper/card 5 icon.png" alt="Core Features 5"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Payment Options</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Seamless transactions await with our diverse
+                                payment options, providing convenience tailored to you.</p>
                         </div>
                     </div>
                     <div class="swiper-slide facilitiescard">
@@ -208,8 +214,8 @@
                             <img src="/assets/Facilities__swiper/card 6 icon.png" alt="Core Features 6"
                                 class="facilities__swiper-card-img">
                             <h4 class="facilities__swiper-card-title">Special Offers</h4>
-                            <p class="facilities__swiper-card-content">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            <p class="facilities__swiper-card-content">Experience exclusivity with our special offers,
+                                designed to elevate your stay and create lasting memories.</p>
                         </div>
                     </div>
                 </div>
@@ -232,9 +238,8 @@
                                 alt="Eggs & Bacon">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Eggs &amp; Bacon</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Start your day right with our classic Eggs &amp;
+                                    Bacon, a hearty and delicious breakfast staple.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -254,9 +259,8 @@
                                 alt="Tea or Coffe">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Tea or Coffee</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Sip and savor with our premium Tea or Coffee
+                                    selection, crafted to awaken your senses.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -276,9 +280,8 @@
                                 alt="Chia Oatmeal">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Chia Oatmeal</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Nourish your morning with the wholesome goodness
+                                    of our Chia Oatmeal, a nutritious and satisfying choice.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -300,9 +303,8 @@
                                 alt="Fruit Parfait">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Fruit Parfait</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Indulge in a burst of freshness with our Fruit
+                                    Parfait, a colorful and delightful blend of seasonal fruits.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -318,13 +320,12 @@
                             </svg>
                         </div>
                         <div class="menu__swiper-recipe">
-                            <img class="menu__swiper-recipe-img"
-                                src="/assets/Menu__IndexSection/marmaladeselection.jpg" alt="Mermelade Selection">
+                            <img class="menu__swiper-recipe-img" src="/assets/Menu__IndexSection/marmaladeselection.jpg"
+                                alt="Mermelade Selection">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Mermelade Selection</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Enhance your breakfast experience with our
+                                    Marmalade Selection, offering a variety of flavors to elevate your palate.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -344,9 +345,9 @@
                                 alt="Cheese Plate">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Cheese Plate</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Elevate your morning with sophistication: our
+                                    Cheese Plate presents a curated selection of premium cheeses for a delightful start
+                                    to your day.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -368,9 +369,8 @@
                                 alt="Eggs & Bacon">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Eggs &amp; Bacon</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Start your day right with our classic Eggs &amp;
+                                    Bacon, a hearty and delicious breakfast staple.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -391,9 +391,8 @@
                                 alt="Tea or Coffe">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Tea or Coffee</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Sip and savor with our premium Tea or Coffee
+                                    selection, crafted to awaken your senses.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -413,9 +412,8 @@
                                 alt="Chia Oatmeal">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Chia Oatmeal</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Nourish your morning with the wholesome goodness
+                                    of our Chia Oatmeal, a nutritious and satisfying choice.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -437,9 +435,8 @@
                                 alt="Fruit Parfait">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Fruit Parfait</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Indulge in a burst of freshness with our Fruit
+                                    Parfait, a colorful and delightful blend of seasonal fruits.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -455,13 +452,12 @@
                             </svg>
                         </div>
                         <div class="menu__swiper-recipe">
-                            <img class="menu__swiper-recipe-img"
-                                src="/assets/Menu__IndexSection/marmaladeselection.jpg" alt="Mermelade Selection">
+                            <img class="menu__swiper-recipe-img" src="/assets/Menu__IndexSection/marmaladeselection.jpg"
+                                alt="Mermelade Selection">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Mermelade Selection</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Enhance your breakfast experience with our
+                                    Marmalade Selection, offering a variety of flavors to elevate your palate.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -481,9 +477,9 @@
                                 alt="Cheese Plate">
                             <div class="menu__swiper-recipe-textcontainer">
                                 <h5 class="menu__swiper-recipe-title">Cheese Plate</h5>
-                                <p class="menu__swiper-recipe-content">Lorem ipsum dolor sit amet, consectetur adip
-                                    isicing
-                                    elit, sed do eiusmod tempor.</p>
+                                <p class="menu__swiper-recipe-content">Elevate your morning with sophistication: our
+                                    Cheese Plate presents a curated selection of premium cheeses for a delightful start
+                                    to your day.</p>
                             </div>
                             <svg class="menu__swiper-recipe-arrow" xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="32" viewBox="0 0 32 32" fill="none">
@@ -507,13 +503,16 @@
             <div class="swiper menu__photoswiper" id="menuphotoswiper">
                 <div class="swiper-wrapper menu__photowrapper">
                     <div class="swiper-slide menu__photoswiper-photo">
-                        <img src="/assets/Menu__IndexSection/Foto1.jpg" alt="Restaurant Photo 1">
+                        <img src="https://dashboardgeneralassets.s3.eu-west-1.amazonaws.com/Fotos+Dashboard/room6.jpeg"
+                            alt="Restaurant Photo 1">
                     </div>
                     <div class="swiper-slide menu__photoswiper-photo">
-                        <img src="/assets/Menu__IndexSection/Foto2.jpg" alt="Restaurant Photo 2">
+                        <img src="https://dashboardgeneralassets.s3.eu-west-1.amazonaws.com/Fotos+Dashboard/room7.jpeg"
+                            alt="Restaurant Photo 2">
                     </div>
                     <div class="swiper-slide menu__photoswiper-photo">
-                        <img src="/assets/Menu__IndexSection/Foto3.png" alt="Restaurant Photo 3">
+                        <img src="https://dashboardgeneralassets.s3.eu-west-1.amazonaws.com/Fotos+Dashboard/room8.jpeg"
+                            alt="Restaurant Photo 3">
                     </div>
                 </div>
                 <div class="swiper-pagination" id="menuphotopagination"></div>
@@ -563,24 +562,28 @@
     <footer class="footer">
         <div class="footer__inner">
             <div class="footer__goodbye">
-                <div class="footer__logo jello">
-                    <a href="index.html"> <img class="footer__logo-img" src="/assets/Footer/footer logo.png"
-                            alt="Logo"></a>
+                <div class="footer__logo pulsating">
+                    <a href="/"> <img class="footer__logo-img" src="/assets/Footer/footer logo.png" alt="Logo"></a>
                     <div class="footer__logo-name">
                         <span class="footer__logo-name-hotel">HOTEL</span>
                         <br>
                         <span class="footer__logo-name-miranda">MIRANDA</span>
                     </div>
                 </div>
-                <p class="footer__goodbye-content">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-                    eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitat ion ullamco laboris nisi.</p>
+                <p class="footer__goodbye-content">Thank you for choosing Hotel Miranda. Immerse yourself in
+                    unparalleled luxury, exceptional service, and unforgettable moments. Stay connected for updates and
+                    special offers. Your journey with us continues. Safe travels!</p>
                 <div class="footer__goodbye-icongroup">
-                   <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer"><img src="/assets/Footer/facebook logo.svg" alt="Facebook" class="footer__goobdbye-icon"></a> 
-                   <a href="https://twitter.com/home?lang=es" target="_blank" rel="noopener noreferrer"><img src="/assets/Footer/twitter logo.svg" alt="Twitter" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"><img src="/assets/Footer/behance logo.svg" alt="Behance" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><img src="/assets/Footer/linkedin logo.svg" alt="LinkedIn" class="footer__goobdbye-icon"></a> 
-                   <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/Footer/youtube logo.svg" alt="Youtube" class="footer__goobdbye-icon"></a> 
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/Footer/facebook logo.svg" alt="Facebook" class="footer__goobdbye-icon"></a>
+                    <a href="https://twitter.com/home?lang=es" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/Footer/twitter logo.svg" alt="Twitter" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/Footer/behance logo.svg" alt="Behance" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/Footer/linkedin logo.svg" alt="LinkedIn" class="footer__goobdbye-icon"></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/Footer/youtube logo.svg" alt="Youtube" class="footer__goobdbye-icon"></a>
                 </div>
             </div>
             <div class="footer__services">
@@ -621,7 +624,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="footer__link" rel="noopener noreferrer" target="_blank" title="maps" href="https://maps.app.goo.gl/3PCGJd1gSEht7YACA">
+                <a class="footer__link" rel="noopener noreferrer" target="_blank" title="maps"
+                    href="https://maps.app.goo.gl/3PCGJd1gSEht7YACA">
                     <div class="footer__contactus-group">
                         <img class="footer__contactus-group-icon" src="/assets/Footer/contact-maps.png"
                             alt="Google Maps Point">
