@@ -3,7 +3,6 @@ const menuCross = document.getElementById("menuCross");
 const nav = document.getElementById("nav");
 const header = document.querySelector(".header");
 
-
 menuBurguer.addEventListener("click", () => {
   menuBurguer.classList.add("header__menuiconburguer--closed");
   menuCross.classList.remove("header__menuiconcross--closed");
@@ -114,12 +113,12 @@ function initMenuPhotoSwiper() {
     menuphotoswiper.classList.add("swiper");
     menuphotowrapper.classList.add("swiper-wrapper");
     swiper4 = new Swiper("#menuphotoswiper", {
-      loop:true,
+      loop: true,
       pagination: {
         el: "#menuphotopagination",
       },
     });
-  } else{
+  } else {
     menuphotoswiper.classList.remove("swiper");
     menuphotowrapper.classList.remove("swiper-wrapper");
   }
@@ -132,4 +131,44 @@ window.addEventListener("resize", () => {
   initFacilitiesSwiper();
   initMenuSwiper();
   initMenuPhotoSwiper();
+});
+
+const scrollToFirstStop = () => {
+  var targetElement = document.getElementById("firststop");
+
+  if (targetElement) {
+    var rect = targetElement.getBoundingClientRect();
+    var targetElementPosition = rect.top + window.scrollY;
+
+    window.scrollTo({
+      top: targetElementPosition,
+      behavior: "smooth",
+    });
+  }
+}
+
+const goToAboutUs = () => {
+
+  window.location.href = 'AboutUs.html';
+}
+
+const goToOffers = () => {
+
+  window.location.href = 'Offers.html';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const form = document.getElementById('checkavailability_form');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      Swal.fire({
+          title: 'Unsent Verification',
+          text: 'In the future, this will be used to check available dates in the rooms!',
+          icon: 'info',
+          confirmButtonText: 'Ok'
+      });
+  });
 });
