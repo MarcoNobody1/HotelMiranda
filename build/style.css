@@ -2483,7 +2483,19 @@ ul {
   display: block;
   margin: 0 auto 15px;
 }
+.roomshow__desc {
+  display: inline-block;
+}
 
+@media only screen and (min-width: 1000px) {
+  .roomshow__inner {
+    display: flex;
+    max-width: 1200px;
+  }
+  .roomshow__roomwrapper {
+    display: inline-block;
+  }
+}
 .roomoffer__btn {
   background: #bead8e;
   font-size: 0.875rem;
@@ -2512,6 +2524,7 @@ ul {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 24px;
 }
 .roomoffer__contentwrapper {
   margin-bottom: 24px;
@@ -2625,6 +2638,55 @@ ul {
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .roomoffer__inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .roomoffer__contentwrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    max-width: 1050px;
+    border-top: 6px solid #bdac8d;
+    margin-top: -80px;
+    z-index: 4;
+    background-color: #fff;
+  }
+  .roomoffer__belowrowcontent {
+    display: flex;
+    gap: 57px;
+    border-top: 1px solid #ececec;
+    padding-top: 36px;
+  }
+  .roomoffer__upperrowcontent {
+    margin-bottom: 20px;
+  }
+  .roomoffer__btn {
+    max-width: 216px;
+  }
+  .roomoffer__imgwrapper-img {
+    max-width: 1170px;
+    max-height: 1570px;
+  }
+  .roomoffer__imgwrapper-newprice {
+    right: 80px;
+    bottom: -60px;
+    z-index: 5;
+  }
+  .roomoffer__imgwrapper-prevprice {
+    right: 80px;
+    bottom: -20px;
+    z-index: 5;
+  }
+  .roomoffer__offer {
+    align-items: center;
+  }
+  .roomoffer__title {
+    margin-bottom: 0;
+  }
+}
 .popularlist {
   margin-bottom: 60px;
 }
@@ -2786,6 +2848,37 @@ ul {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contactoptions {
+    max-width: none;
+  }
+  .contactoptions__inner {
+    max-width: 1400px;
+    gap: 31px;
+  }
+  .contactoptions__option1, .contactoptions__option2, .contactoptions__option3 {
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    padding: 53px 71px 57px 32px;
+    gap: 2%;
+    min-width: 30%;
+    max-width: 370px;
+  }
+  .contactoptions__alloptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contactoptions__img {
+    max-height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .contactform__btn {
   background: #bead8e;
   font-size: 0.875rem;
@@ -2821,7 +2914,7 @@ ul {
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
-  background: #F8F8F8;
+  background: #f8f8f8;
   border: none;
 }
 .contactform__form textarea {
@@ -2834,7 +2927,7 @@ ul {
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
-  background: #F8F8F8;
+  background: #f8f8f8;
   border: none;
   margin-bottom: 36px;
 }
@@ -2846,8 +2939,12 @@ ul {
   position: relative;
   display: inline-block;
   width: 100%;
-  max-width: 335px;
   margin: 0 auto;
+  max-width: 335px;
+}
+
+.--space {
+  margin-bottom: 16px;
 }
 
 #name {
@@ -2880,6 +2977,21 @@ ul {
   background-position: 5% 17%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contactform__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactform__firstrow, .contactform__secondrow {
+    display: flex;
+    gap: 16px;
+    min-width: 700px;
+  }
+  .contactform__inputwrapper--textarea {
+    width: 100%;
+    max-width: 700px;
+  }
+}
 .aboutusinfo {
   padding: 0 20px 51px;
 }
