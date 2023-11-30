@@ -71,7 +71,7 @@
                     src="https://dashboardgeneralassets.s3.eu-west-1.amazonaws.com/Fotos+Dashboard/room8.jpeg"
                     alt="Room photo">
             </div>
-            <form class="roomsdetails__form">
+            <form class="roomsdetails__form" id="roomsdetails__form">
                 <p class="roomsdetails__form--title">Check Availability</p>
                 <label for="checkin" class="roomsdetails__form--checkinlabel">Check In</label>
                 <input type="date" id="checkin" name="checkin" class="roomsdetails__form--inputcheckin">
@@ -216,7 +216,7 @@
                                     Room. Clean lines, cozy sleeping area, and a touch of charm await you for a unique
                                     stay.</p>
                                 <span class="roomsrelated__price">$345/Night</span>
-                                <span class="roomsrelated__booknow">Book Now</span>
+                                <span onclick="goToRoomDetails()" class="roomsrelated__booknow">Book Now</span>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                                     Room. Clean lines, cozy sleeping area, and a touch of charm await you for a unique
                                     stay.</p>
                                 <span class="roomsrelated__price">$345/Night</span>
-                                <span class="roomsrelated__booknow">Book Now</span>
+                                <span onclick="goToRoomDetails()" class="roomsrelated__booknow">Book Now</span>
                             </div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
                                     Room. Clean lines, cozy sleeping area, and a touch of charm await you for a unique
                                     stay.</p>
                                 <span class="roomsrelated__price">$345/Night</span>
-                                <span class="roomsrelated__booknow">Book Now</span>
+                                <span onclick="goToRoomDetails()" class="roomsrelated__booknow">Book Now</span>
                             </div>
                         </div>
                     </div>
@@ -361,6 +361,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>

@@ -62,3 +62,23 @@ initRoomDetailsSwiper();
 window.addEventListener("resize", () => {
   initRoomDetailsSwiper();
 });
+
+const goToRoomDetails = () => {
+
+  window.location.href = 'RoomDetails.html';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("roomsdetails__form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    Swal.fire({
+      title: "Unsent Verification",
+      text: "In the future, this will be used to check available dates in this specific room!",
+      icon: "info",
+      confirmButtonText: "Ok",
+    });
+  });
+});
