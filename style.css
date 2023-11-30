@@ -2483,7 +2483,19 @@ ul {
   display: block;
   margin: 0 auto 15px;
 }
+.roomshow__desc {
+  display: inline-block;
+}
 
+@media only screen and (min-width: 1000px) {
+  .roomshow__inner {
+    display: flex;
+    max-width: 1200px;
+  }
+  .roomshow__roomwrapper {
+    display: inline-block;
+  }
+}
 .roomoffer__btn {
   background: #bead8e;
   font-size: 0.875rem;
