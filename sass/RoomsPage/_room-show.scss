@@ -5,6 +5,9 @@
 
     &__booknow {
         @include roomprice($theme: #bdbdbd);
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__inner {
         display: inline-block;
