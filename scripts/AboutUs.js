@@ -96,3 +96,8 @@ window.addEventListener("resize", () => {
   initAboutusPaginationSwiper();
   initAboutPhotoSwiper();
 });
+
+const goToRooms = () => {
+
+  window.location.href = 'Rooms.html';
+}
