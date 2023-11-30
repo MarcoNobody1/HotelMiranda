@@ -89,3 +89,23 @@
     background-color: #BEAD8E !important;
 }
 
+@media only screen and (min-width: 1000px) {
+    .aboutusfacilities {
+        max-width: 1600px;
+        &__swiperwrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+        &__inner {
+            max-width: none;
+            width: 100%;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+        &__card{
+            width: auto !important;
+        }
+    }
+}
