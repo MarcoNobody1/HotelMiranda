@@ -2524,6 +2524,7 @@ ul {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 24px;
 }
 .roomoffer__contentwrapper {
   margin-bottom: 24px;
@@ -2637,6 +2638,55 @@ ul {
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .roomoffer__inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .roomoffer__contentwrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    max-width: 1050px;
+    border-top: 6px solid #bdac8d;
+    margin-top: -80px;
+    z-index: 4;
+    background-color: #fff;
+  }
+  .roomoffer__belowrowcontent {
+    display: flex;
+    gap: 57px;
+    border-top: 1px solid #ececec;
+    padding-top: 36px;
+  }
+  .roomoffer__upperrowcontent {
+    margin-bottom: 20px;
+  }
+  .roomoffer__btn {
+    max-width: 216px;
+  }
+  .roomoffer__imgwrapper-img {
+    max-width: 1170px;
+    max-height: 1570px;
+  }
+  .roomoffer__imgwrapper-newprice {
+    right: 80px;
+    bottom: -60px;
+    z-index: 5;
+  }
+  .roomoffer__imgwrapper-prevprice {
+    right: 80px;
+    bottom: -20px;
+    z-index: 5;
+  }
+  .roomoffer__offer {
+    align-items: center;
+  }
+  .roomoffer__title {
+    margin-bottom: 0;
+  }
+}
 .popularlist {
   margin-bottom: 60px;
 }
