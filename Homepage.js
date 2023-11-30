@@ -71,6 +71,7 @@ function initFacilitiesSwiper() {
   var swiper2;
   if (window.matchMedia("(max-width: 1000px)").matches) {
     facilitiesSwiper.classList.add("swiper");
+    facilitieswrapper.classList.add("swiper-wrapper");
     swiper2 = new Swiper(".facilities__swiper", {
       pagination: {
         el: ".swiper-pagination",
@@ -110,6 +111,8 @@ initMenuSwiper();
 function initMenuPhotoSwiper() {
   var swiper4;
   if (window.matchMedia("(max-width: 1000px)").matches) {
+    menuphotoswiper.classList.add("swiper");
+    menuphotowrapper.classList.add("swiper-wrapper");
     swiper4 = new Swiper("#menuphotoswiper", {
       loop:true,
       pagination: {
