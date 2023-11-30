@@ -2416,6 +2416,9 @@ ul {
   font-size: 1rem;
   font-weight: 700;
 }
+.roomshow__booknow:hover {
+  cursor: pointer;
+}
 .roomshow__inner {
   display: inline-block;
   max-width: 500px;
@@ -2627,6 +2630,9 @@ ul {
   font-family: Archivo;
   font-size: 1rem;
   font-weight: 700;
+}
+.popularlist__booknow:hover {
+  cursor: pointer;
 }
 .popularlist__content {
   color: #777;
@@ -3312,10 +3318,12 @@ html,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 1000px) {
