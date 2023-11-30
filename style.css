@@ -2327,6 +2327,9 @@ ul {
   font-size: 1rem;
   font-weight: 700;
 }
+.roomsrelated__booknow:hover {
+  cursor: pointer;
+}
 .roomsrelated__content {
   color: #777;
   text-align: center;
