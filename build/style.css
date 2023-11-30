@@ -2822,16 +2822,13 @@ ul {
   margin-bottom: 24px;
 }
 .contactoptions__option1:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 .contactoptions__option2:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 .contactoptions__option3:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 .contactoptions__title {
   color: #222;
