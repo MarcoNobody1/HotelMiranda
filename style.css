@@ -2929,12 +2929,42 @@ ul {
 }
 .aboutusinfo__video {
   margin: 0 auto 36px;
+  width: 335px;
+  height: 270px;
 }
 
 @media only screen and (max-width: 380px) {
   .aboutusinfo__video {
     width: 250px;
     height: 161px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutusinfo__video {
+    width: 100%;
+    height: 350px;
+  }
+  .aboutusinfo__facilities {
+    display: flex;
+    gap: 42px;
+    max-width: none;
+    height: auto;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .aboutusinfo__facility {
+    padding: 55px 20px 50px;
+    width: 200px;
+    height: 200px;
+  }
+  .aboutusinfo__inner {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .aboutusinfo__title {
+    font-size: 4.5rem;
+    padding: 0 50px;
   }
 }
 .aboutusrestaurant {
@@ -2994,6 +3024,29 @@ ul {
   margin-bottom: 26px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .aboutusrestaurant {
+    padding: 20px;
+  }
+  .aboutusrestaurant__inner {
+    padding: 20px;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    gap: 5%;
+  }
+  .aboutusrestaurant__img {
+    width: 530px;
+    height: 420px;
+    margin-bottom: 32px;
+  }
+  .aboutusrestaurant__title {
+    max-width: 440px;
+  }
+  .aboutusrestaurant__content {
+    max-width: 400px;
+  }
+}
 .aboutcard1 {
   background-image: url("../assets/AboutUsPage/bg1.png");
   background-position: center;
@@ -3118,6 +3171,26 @@ ul {
   background-color: #BEAD8E !important;
 }
 
+@media only screen and (min-width: 1000px) {
+  .aboutusfacilities {
+    max-width: 1600px;
+  }
+  .aboutusfacilities__swiperwrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .aboutusfacilities__inner {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 20px;
+  }
+  .aboutusfacilities__card {
+    width: auto !important;
+  }
+}
 .aboutuscounter {
   text-align: center;
   margin-bottom: 60px;
@@ -3201,6 +3274,38 @@ ul {
   margin-bottom: 36px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .aboutuscounter__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .aboutuscounter__achievements {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  .aboutuscounter__achievement {
+    min-width: 270px;
+    max-width: 370px;
+    padding: 25px 40px;
+  }
+  .aboutuscounter__photoswiper {
+    margin: 0 auto;
+  }
+  .aboutuscounter__photoswiper-photo img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .aboutuscounter__photowrapper {
+    display: flex;
+    gap: 30px;
+  }
+}
 html,
 * {
   transition: all 250ms ease-in-out;
