@@ -1,0 +1,82 @@
+@import "../variables";
+
+.roomsrelated {
+  padding: 20px;
+  margin-bottom: 74px;
+  &__booknow {
+    @include roomprice($theme: #bdbdbd);
+  }
+  &__content {
+    color: #777;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+  &__desc {
+    text-align: center;
+    background-color: #fff;
+  }
+  &__icons {
+    display: flex;
+    gap: 16px;
+    padding: 12px 24px;
+    background-color: #fff;
+    margin: -30px auto 28px;
+    z-index: 1;
+    position: relative;
+    max-width: 256px;
+  }
+  &__photo {
+    width: 335px;
+    height: 218px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  &__price {
+    @include roomprice;
+    margin-right: 19px;
+  }
+  &__room-title {
+    color: #222;
+    font-family: Old Standard TT;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    margin-bottom: 16px;
+  }
+  &__roomwrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 335px;
+    background-color: #fff;
+    padding-bottom: 28px;
+  }
+  &__swiper {
+    position: relative;
+    max-width: 380px;
+    --swiper-navigation-top-offset: 30%;
+    --swiper-navigation-sides-offset: 10px;
+  }
+  &__title {
+    @include h4title($theme: #222);
+    max-width: 335px;
+    margin: 0 auto 47px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .roomsrelated {
+    &__swiper {
+      max-width: 750px;
+    }
+    &__title {
+        max-width: 800px;
+        margin: 0 auto 47px;
+      }
+  }
+}
