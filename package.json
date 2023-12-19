@@ -4,7 +4,7 @@
   "main": "Homepage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "plus-build":"aws s3 sync build/ s3://hotelmirandaoxygen --delete --profile MarcoNobody"
+    "build":"aws s3 sync build/ s3://hotelmirandaoxygen --delete --profile MarcoNobody"
   },
   "keywords": [],
   "author": "",
