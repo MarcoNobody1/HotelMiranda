@@ -4,7 +4,7 @@
   "main": "Homepage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"aws s3 sync build/ s3://hotelmirandaoxygen --delete --profile MarcoNobody"
+    "build": "rm -rf build && mkdir build && cp -r index.html AboutUs.html Contact.html Offers.html RoomDetails.html Rooms.html style.css Homepage.js scripts assets favicon.ico build/"
   },
   "keywords": [],
   "author": "",
