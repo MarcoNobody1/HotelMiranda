@@ -17,3 +17,5 @@ El objetivo principal de este proyecto es llevar a cabo la maquetación del siti
 7. Ajustar los márgenes con margen-top/bottom y margin-left/right para crear el espacio necesario después de cada elemento.
 
 ## Actualizaciones // Nuevas Funciones
+
+- Futura migración de MySQL a MongoDB (working on it)
