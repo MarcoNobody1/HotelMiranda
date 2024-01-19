@@ -1,5 +1,6 @@
 # Proyecto Hotel Miranda
 
+
 El proyecto **Hotel Miranda** se centra en la creación de la página web principal de un hotel. El diseño y maquetación se realizarán siguiendo los principios de la metodología BEM y utilizando Sass para la gestión de estilos. La información detallada sobre las páginas a desarrollar, tanto para versión mobile como desktop, se encuentra en los [diseños del sitio web en Figma](https://www.figma.com/file/xxxxxx/Hotel-Miranda-Designs?type=design&node-id=0%3A1).
 
 ## Objetivo del Proyecto
